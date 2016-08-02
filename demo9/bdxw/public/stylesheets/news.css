@@ -1,0 +1,248 @@
+/*@import url('./bootstrap.min.css');*/
+html{
+	/*min-width: 414px;*/
+}
+body,.container{
+	margin:0;
+	padding: 0;
+}
+.bkclr-blue{
+	background-color: #3E98F0;
+}
+header{
+	height: 44px;
+}
+.logo_con{
+	width: 50%;
+	height: 44px;
+	display: inline-block;
+	text-align: center;
+	margin:0 auto;
+}
+.logo_con img{
+	margin-top: 6px;
+}
+.icon{
+	width: 34px;
+	height: 44px;
+	display: inline-block;
+	background: url("/images/news_imgs/bg-new-toolbar.png") no-repeat;
+	background-size:40px auto;
+}
+.icon-bd{
+	background-position: 0px 6px;
+}
+.icon-hum{
+	background-position: 0px -462px;
+}
+.icon-search{
+	background-position: 0px -162px;
+}
+.icon-plus{
+	background-position: 0px -107px;
+}
+.hd-right-icon,.hd-left-icon{
+	width: 25%;
+	height: 44px;
+}
+.hd-right-icon{
+	float: right;
+	text-align: right;
+}
+.hd-left-icon{
+	float: left;
+	text-align: left;
+}
+nav{
+	width: 100%;
+	height: 74px;
+}
+.nav-box{
+	width: 95%;
+	height: 66px;
+	margin:0 auto;
+	border-top: 1px solid #5DABF0;
+}
+.nav-box ul{
+	margin: 0;
+	padding: 0;
+}
+.nav-box ul li{
+	list-style: none;
+	width: 16.66666667%;
+	height: 33px;
+	float: left;
+	color: white;
+	/*background-color: aqua;*/
+	text-align: center;
+	font-size: 100%;
+	line-height: 33px;
+	cursor: pointer;
+	/*text-decoration-color: */
+}
+#li-span-2{
+	width: 33.33333333%;
+}
+.nav-box ul li a:hover{
+	text-decoration: underline;
+	text-decoration-color: white;
+	/*text-decoration*/
+}
+
+article{
+	width: 95%;
+	margin: 10px auto;
+}
+.hd-img{
+	width: 100%;
+	height: 246px;
+	margin:0 auto;
+	position: relative;
+}
+.con-tab1 .hd-img{
+	background: url(/images/news_imgs/tab1/bg1.jpg) no-repeat;
+	background-size: 394px auto;
+	background-position:center;
+}
+.con-tab2 .hd-img{
+	background: url(/images/news_imgs/tab2/bg1.jpg) no-repeat;
+	background-size: 394px auto;
+	background-position:center;
+}
+
+.con-tab3 .hd-img{
+	background: url(/images/news_imgs/tab3/bg1.jpg) no-repeat;
+	background-size: 394px auto;
+	background-position:center;
+}
+
+.con-tab4 .hd-img{
+	background: url(/images/news_imgs/tab4/bg1.jpg) no-repeat;
+	background-size: 394px auto;
+	background-position:center;
+}
+
+.con-tab5 .hd-img{
+	background: url(/images/news_imgs/tab5/bg1.jpg) no-repeat;
+	background-size: 394px auto;
+	background-position:center;
+}
+
+.con-tab6 .hd-img{
+	background: url(/images/news_imgs/tab6/bg1.jpg) no-repeat;
+	background-size: 394px auto;
+	background-position:center;
+}
+
+.con-tab7 .hd-img{
+	background: url(/images/news_imgs/tab7/bg1.jpg) no-repeat;
+	background-size: 394px auto;
+	background-position:center;
+}
+
+.con-tab8 .hd-img{
+	background: url(/images/news_imgs/tab8/bg1.jpg) no-repeat;
+	background-size: 394px auto;
+	background-position:center;
+}
+
+.con-tab9 .hd-img{
+	background: url(/images/news_imgs/tab9/bg1.jpg) no-repeat;
+	background-size: 394px auto;
+	background-position:center;
+}
+.con-tab10 .hd-img{
+	background: url(/images/news_imgs/tab10/bg1.jpg) no-repeat;
+	background-size: 394px auto;
+	background-position:center;
+}
+
+
+
+.hd-img .hd-img-title{
+	position: relative;
+	margin:0 auto;
+	bottom: -218px;
+	height: 28px;
+	width: 100%;
+	color: white;
+	background-color: #2C292A;
+	opacity: 0.8;
+	font-size: 12px;
+	font-family: arial;
+	line-height: 28px;
+	letter-spacing: 2px;
+	text-indent: 10px;
+}
+.con-tab{
+	width: 100%;
+	display: none;
+}
+.tab-active{
+	display: block;
+}
+.news-container{
+	width: 100%;
+	margin: 0 auto;
+}
+.news-wrap{
+	width: 100%;
+	height: 70px;
+	margin-top: 10px;
+}
+.news-wrap .img-wrap{
+	width: 95px;
+	height: 68px;
+	float: left;
+	overflow: hidden;
+}
+.news-wrap .img-wrap img{
+	width: 95px;
+	height: auto;
+}
+
+.news-box{
+	width: 70%;
+	/*min-width: 280px;*/
+	height: 100%;
+	position: relative;
+	float: left;
+	margin-left: 10px;
+}
+/*适配320屏幕*/
+@media screen and (max-width:320px) {
+    .news-box{
+        width: 50%;
+    }
+}
+.news-wrap .news-title{
+	margin-top: 2px;
+	font-size: 16px;
+	color: #333;
+}
+.news-wrap .news-time{
+	position: absolute;
+	bottom: 2px;
+	font-size: 12px;
+	color: #999;
+}
+.add-more{
+	position: relative;
+	width: 80%;
+	height: 38px;
+	margin: 10px auto;
+	font-size: 18px;
+	line-height: 38px;
+	text-align: center;
+	color: #666;
+	border: 1px solid #eee;
+	cursor: pointer;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	-o-user-select: none;
+	user-select: none;
+}
+.add-more:hover{
+	background-color: #eee;
+}

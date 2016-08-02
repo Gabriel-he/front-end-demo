@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <title>登录界面</title>
+    <link rel="stylesheet" type="text/css" href="/stylesheets/style.css">
+</head>
+<!-- body中包含背景 -->
+<body class="login-body">
+    <!-- container包裹所有登录 -->
+    <div class="container center-block">
+        <h1>新闻管理登录</h1>
+        <div id="login_box">
+            <img src="/images/backend/login-logo.png">
+            <!-- 登录信息 -->
+            <form action="#">
+                <input type="text" autofocus placeholder="User ID" id="user-id">
+                <input type="password" placeholder="Password" id="user-pswd">
+                <!-- 使用button 按钮而非submit 否则js无法控制页面跳转 -->
+                <button class="btn-login" type="button" id="submit_btn">
+                    Sign In
+                </button>
+            </form>
+            <div id="registration">
+                <span>Not a member yet?</span>
+                <a href="#">Signup</a>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="/javascripts/jquery.min.js"></script>
+    <script type="text/javascript" src="/javascripts/login.js"></script>
+</body>
+    
+</html>

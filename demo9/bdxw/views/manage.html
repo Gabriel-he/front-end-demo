@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>后台管理系统</title>
+    <link rel="stylesheet" type="text/css" href="/stylesheets/style.css">
+</head>
+
+<body>
+    <div class="container2">
+        <nav class="col-lg-2 col-md-3 col-sm-4 col-xs-6 left-nav">
+            <img src="/images/backend/logo.png" alt="logo" id="nav-logo">
+            <div id="panel-box">
+                <div class="panel-group">
+                    <ul>
+                        <li><a class="tab-chosen">推荐</a></li>
+                        <li><a>百家</a></li>
+                        <li><a>本地</a></li>
+                        <li><a>图片</a></li>
+                        <li><a>娱乐</a></li>
+                        <li><a>社会</a></li>
+                        <li><a>军事</a></li>
+                        <li><a>女人</a></li>
+                        <li><a>教育</a></li>
+                        <li><a>科技</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <content class="col-lg-10 col-md-9 col-sm-8 col-xs-6  right-content">
+            <div id="title">
+                <input type="tex" class="col-lg-3 col-md-3 col-sm-3 col-sx-3 hidden-u700" id="search-frame" placeholder="Search here...">
+                <!-- 用户信息下拉菜单 -->
+                <div class="user-name dropdown">
+                    <a id="dLabel" data-target="#" href="#" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                        You
+                        <span class="caret"></span>
+                    </a>
+                    <ul id="user_menu" class="dropdown-menu" aria-labelledby="dLabel">
+                        <!-- <li><a href="#">Option</a></li>
+                        <li><a href="#">Preference</a></li> -->
+                        <li role="separator" class="divider"></li>
+                        <li><a href="#">SignOut</a></li>
+                    </ul>
+                </div>
+                <!-- end of 下拉菜单 -->
+            </div>
+            <article>
+                <div class="table tab1 tab-active">
+                    <div class="tab-con">
+                        <table class="type1">
+                            <!-- 表头保持不动 -->
+                            <tr class="header-row">
+                                <th>ID</th>
+                                <th>TYPE</th>
+                                <th>TITLE</th>
+                                <th>TIME</th>
+                                <th>IMG</th>
+                                <th>OPERATION</th>
+                            </tr>
+                            <tr class="data-row">
+                                <td>1</td>
+                                <td>推荐</td>
+                                <td>习近平会见联合国秘书长潘基文</td>
+                                <td>5小时前</td>
+                                <td>./img/tab1/sm1.jpg</td>
+                                <td  class="delete-btn">
+                                    <button type="button">delete</button>
+                                    <button type="button">modify</button>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="add_news">
+                        <!-- 使用ajax提交 -->
+                        <form action="#" method="post">
+                            <label for="#">新增新闻条目：</label>
+                            <input type="text" class="title_input" placeholder="title" name="title">
+                            <input type="text" class="img_input" placeholder="img" name="img">
+                            <button type="button" class="add-btn">新增</button>
+                            <button type="reset">重置</button>
+                        </form>
+                    </div>
+                    <div class="modify_news">
+                        <form action="#" method="post">
+                            <label for="#">修改内容：</label>
+                            <input type="text" class="title_input" placeholder="title" name="title">
+                            <input type="text" class="img_input" placeholder="img" name="img">
+                            <button type="button" class="modify-sub-btn">提交</button>
+                            <button type="reset">重置</button>
+                        </form>        
+                    </div>
+                </div>
+                <div class="table tab2">
+                    <div class="tab-con">
+                        <table class="type2">
+                            <!-- 表头保持不动 -->
+                            <tr class="header-row">
+                                <th>ID</th>
+                                <th>TYPE</th>
+                                <th>TITLE</th>
+                                <th>TIME</th>
+                                <th>IMG</th>
+                                <th>OPERATION</th>
+                            </tr>
+                            <tr class="data-row">
+                                <td>1</td>
+                                <td>推荐</td>
+                                <td>习近平会见联合国秘书长潘基文</td>
+                                <td>5小时前</td>
+                                <td>./img/tab1/sm1.jpg</td>
+                                <td  class="delete-btn">
+                                    <button type="button">delete</button>
+                                    <button type="button">modify</button>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="add_news">
+                        <!-- 使用ajax提交 -->
+                        <form action="#" method="post">
+                            <label for="#">新增新闻条目：</label>
+                            <input type="text" class="title_input" placeholder="title" name="title">
+                            <input type="text" class="img_input" placeholder="img" name="img">
+                            <button type="button" class="add-btn">新增</button>
+                            <button type="reset">重置</button>
+                        </form>
+                    </div>
+                    <div class="modify_news">
+                        <form action="#" method="post">
+                            <label for="#">修改内容：</label>
+                            <!-- <input type="text" class="id_input" placeholder="id" name="id"> -->
+                            <input type="text" class="title_input" placeholder="title" name="title">
+                            <input type="text" class="img_input" placeholder="img" name="img">
+                            <button type="button" class="modify-sub-btn">提交</button>
+                            <button type="reset">重置</button>
+                        </form>        
+                    </div>
+                </div>
+                <div class="table tab3">
+                    <div class="tab-con">
+                        <table class="type3">
+                            <!-- 表头保持不动 -->
+                            <tr class="header-row">
+                                <th>ID</th>
+                                <th>TYPE</th>
+                                <th>TITLE</th>
+                                <th>TIME</th>
+                                <th>IMG</th>
+                                <th>OPERATION</th>
+                            </tr>
+                            <tr class="data-row">
+                                <td>1</td>
+                                <td>推荐</td>
+                                <td>习近平会见联合国秘书长潘基文</td>
+                                <td>5小时前</td>
+                                <td>./img/tab1/sm1.jpg</td>
+                                <td  class="delete-btn">
+                                    <button type="button">delete</button>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="add_news">
+                        <!-- 使用ajax提交 -->
+                        <form action="#" method="post">
+                            <label for="#">新增新闻条目：</label>
+                            <input type="text" class="title_input" placeholder="title" name="title">
+                            <input type="text" class="img_input" placeholder="img" name="img">
+                            <button type="button" class="add-btn">新增</button>
+                            <button type="reset">重置</button>
+                        </form>
+                    </div>
+                    <div class="modify_news">
+                        <form action="#" method="post">
+                            <label for="#">修改内容：</label>
+                            <input type="text" class="title_input" placeholder="title" name="title">
+                            <input type="text" class="img_input" placeholder="img" name="img">
+                            <button type="button" class="modify-sub-btn">提交</button>
+                            <button type="reset">重置</button>
+                        </form>        
+                    </div>
+                </div>
+                <div class="table tab4">
+                    <div class="tab-con">
+                        <table class="type4">
+                            <!-- 表头保持不动 -->
+                            <tr class="header-row">
+                                <th>ID</th>
+                                <th>TYPE</th>
+                                <th>TITLE</th>
+                                <th>TIME</th>
+                                <th>IMG</th>
+                                <th>OPERATION</th>
+                            </tr>
+                            <tr class="data-row">
+                                <td>1</td>
+                                <td>推荐</td>
+                                <td>习近平会见联合国秘书长潘基文</td>
+                                <td>5小时前</td>
+                                <td>./img/tab1/sm1.jpg</td>
+                                <td  class="delete-btn">
+                                    <button type="button">delete</button>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="add_news">
+                        <!-- 使用ajax提交 -->
+                        <form action="#" method="post">
+                            <label for="#">新增新闻条目：</label>
+                            <input type="text" class="title_input" placeholder="title" name="title">
+                            <input type="text" class="img_input" placeholder="img" name="img">
+                            <button type="button" class="add-btn">新增</button>
+                            <button type="reset">重置</button>
+                        </form>
+                    </div>
+                    <div class="modify_news">
+                        <form action="#" method="post">
+                            <label for="#">修改内容：</label>
+                            <input type="text" class="title_input" placeholder="title" name="title">
+                            <input type="text" class="img_input" placeholder="img" name="img">
+                            <button type="button" class="modify-sub-btn">提交</button>
+                            <button type="reset">重置</button>
+                        </form>        
+                    </div>
+                </div>
+                <div class="table tab5">
+                    <div class="tab-con">
+                        <table class="type5">
+                            <!-- 表头保持不动 -->
+                            <tr class="header-row">
+                                <th>ID</th>
+                                <th>TYPE</th>
+                                <th>TITLE</th>
+                                <th>TIME</th>
+                                <th>IMG</th>
+                                <th>OPERATION</th>
+                            </tr>
+                            <tr class="data-row">
+                                <td>1</td>
+                                <td>推荐</td>
+                                <td>习近平会见联合国秘书长潘基文</td>
+                                <td>5小时前</td>
+                                <td>./img/tab1/sm1.jpg</td>
+                                <td  class="delete-btn">
+                                    <button type="button">delete</button>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="add_news">
+                        <!-- 使用ajax提交 -->
+                        <form action="#" method="post">
+                            <label for="#">新增新闻条目：</label>
+                            <input type="text" class="title_input" placeholder="title" name="title">
+                            <input type="text" class="img_input" placeholder="img" name="img">
+                            <button type="button" class="add-btn">新增</button>
+                            <button type="reset">重置</button>
+                        </form>
+                    </div>
+                    <div class="modify_news">
+                        <form action="#" method="post">
+                            <label for="#">修改内容：</label>
+
+                            <input type="text" class="title_input" placeholder="title" name="title">
+                            <input type="text" class="img_input" placeholder="img" name="img">
+                            <button type="button" class="modify-sub-btn">提交</button>
+                            <button type="reset">重置</button>
+                        </form>        
+                    </div>
+                </div>
+                <div class="table tab6">
+                    <div class="tab-con">
+                        <table class="type6">
+                            <!-- 表头保持不动 -->
+                            <tr class="header-row">
+                                <th>ID</th>
+                                <th>TYPE</th>
+                                <th>TITLE</th>
+                                <th>TIME</th>
+                                <th>IMG</th>
+                                <th>OPERATION</th>
+                            </tr>
+                            <tr class="data-row">
+                                <td>1</td>
+                                <td>推荐</td>
+                                <td>习近平会见联合国秘书长潘基文</td>
+                                <td>5小时前</td>
+                                <td>./img/tab1/sm1.jpg</td>
+                                <td  class="delete-btn">
+                                    <button type="button">delete</button>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="add_news">
+                        <!-- 使用ajax提交 -->
+                        <form action="#" method="post">
+                            <label for="#">新增新闻条目：</label>
+                            <input type="text" class="title_input" placeholder="title" name="title">
+                            <input type="text" class="img_input" placeholder="img" name="img">
+                            <button type="button" class="add-btn">新增</button>
+                            <button type="reset">重置</button>
+                        </form>
+                    </div>
+                    <div class="modify_news">
+                        <form action="#" method="post">
+                            <label for="#">修改内容：</label>
+
+                            <input type="text" class="title_input" placeholder="title" name="title">
+                            <input type="text" class="img_input" placeholder="img" name="img">
+                            <button type="button" class="modify-sub-btn">提交</button>
+                            <button type="reset">重置</button>
+                        </form>        
+                    </div>
+                </div>
+                <div class="table tab7">
+                    <div class="tab-con">
+                        <table class="type7">
+                            <!-- 表头保持不动 -->
+                            <tr class="header-row">
+                                <th>ID</th>
+                                <th>TYPE</th>
+                                <th>TITLE</th>
+                                <th>TIME</th>
+                                <th>IMG</th>
+                                <th>OPERATION</th>
+                            </tr>
+                            <tr class="data-row">
+                                <td>1</td>
+                                <td>推荐</td>
+                                <td>习近平会见联合国秘书长潘基文</td>
+                                <td>5小时前</td>
+                                <td>./img/tab1/sm1.jpg</td>
+                                <td  class="delete-btn">
+                                    <button type="button">delete</button>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="add_news">
+                        <!-- 使用ajax提交 -->
+                        <form action="#" method="post">
+                            <label for="#">新增新闻条目：</label>
+                            <input type="text" class="title_input" placeholder="title" name="title">
+                            <input type="text" class="img_input" placeholder="img" name="img">
+                            <button type="button" class="add-btn">新增</button>
+                            <button type="reset">重置</button>
+                        </form>
+                    </div>
+                    <div class="modify_news">
+                        <form action="#" method="post">
+                            <label for="#">修改内容：</label>
+
+                            <input type="text" class="title_input" placeholder="title" name="title">
+                            <input type="text" class="img_input" placeholder="img" name="img">
+                            <button type="button" class="modify-sub-btn">提交</button>
+                            <button type="reset">重置</button>
+                        </form>        
+                    </div>
+                </div>
+                <div class="table tab8">
+                    <div class="tab-con">
+                        <table class="type8">
+                            <!-- 表头保持不动 -->
+                            <tr class="header-row">
+                                <th>ID</th>
+                                <th>TYPE</th>
+                                <th>TITLE</th>
+                                <th>TIME</th>
+                                <th>IMG</th>
+                                <th>OPERATION</th>
+                            </tr>
+                            <tr class="data-row">
+                                <td>1</td>
+                                <td>推荐</td>
+                                <td>习近平会见联合国秘书长潘基文</td>
+                                <td>5小时前</td>
+                                <td>./img/tab1/sm1.jpg</td>
+                                <td  class="delete-btn">
+                                    <button type="button">delete</button>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="add_news">
+                        <!-- 使用ajax提交 -->
+                        <form action="#" method="post">
+                            <label for="#">新增新闻条目：</label>
+                            <input type="text" class="title_input" placeholder="title" name="title">
+                            <input type="text" class="img_input" placeholder="img" name="img">
+                            <button type="button" class="add-btn">新增</button>
+                            <button type="reset">重置</button>
+                        </form>
+                    </div>
+                    <div class="modify_news">
+                        <form action="#" method="post">
+                            <label for="#">修改内容：</label>
+
+                            <input type="text" class="title_input" placeholder="title" name="title">
+                            <input type="text" class="img_input" placeholder="img" name="img">
+                            <button type="button" class="modify-sub-btn">提交</button>
+                            <button type="reset">重置</button>
+                        </form>        
+                    </div>
+                </div>
+                <div class="table tab9">
+                    <div class="tab-con">
+                        <table class="type9">
+                            <!-- 表头保持不动 -->
+                            <tr class="header-row">
+                                <th>ID</th>
+                                <th>TYPE</th>
+                                <th>TITLE</th>
+                                <th>TIME</th>
+                                <th>IMG</th>
+                                <th>OPERATION</th>
+                            </tr>
+                            <tr class="data-row">
+                                <td>1</td>
+                                <td>推荐</td>
+                                <td>习近平会见联合国秘书长潘基文</td>
+                                <td>5小时前</td>
+                                <td>./img/tab1/sm1.jpg</td>
+                                <td  class="delete-btn">
+                                    <button type="button">delete</button>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="add_news">
+                        <!-- 使用ajax提交 -->
+                        <form action="#" method="post">
+                            <label for="#">新增新闻条目：</label>
+                            <input type="text" class="title_input" placeholder="title" name="title">
+                            <input type="text" class="img_input" placeholder="img" name="img">
+                            <button type="button" class="add-btn">新增</button>
+                            <button type="reset">重置</button>
+                        </form>
+                    </div>
+                    <div class="modify_news">
+                        <form action="#" method="post">
+                            <label for="#">修改内容：</label>
+
+                            <input type="text" class="title_input" placeholder="title" name="title">
+                            <input type="text" class="img_input" placeholder="img" name="img">
+                            <button type="button" class="modify-sub-btn">提交</button>
+                            <button type="reset">重置</button>
+                        </form>        
+                    </div>
+                </div>
+                <div class="table tab10">
+                    <div class="tab-con">
+                        <table class="type10">
+                            <!-- 表头保持不动 -->
+                            <tr class="header-row">
+                                <th>ID</th>
+                                <th>TYPE</th>
+                                <th>TITLE</th>
+                                <th>TIME</th>
+                                <th>IMG</th>
+                                <th>OPERATION</th>
+                            </tr>
+                            <tr class="data-row">
+                                <td>1</td>
+                                <td>推荐</td>
+                                <td>习近平会见联合国秘书长潘基文</td>
+                                <td>5小时前</td>
+                                <td>./img/tab1/sm1.jpg</td>
+                                <td  class="delete-btn">
+                                    <button type="button">delete</button>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="add_news">
+                        <!-- 使用ajax提交 -->
+                        <form action="#" method="post">
+                            <label for="#">新增新闻条目：</label>
+                            <input type="text" class="title_input" placeholder="title" name="title">
+                            <input type="text" class="img_input" placeholder="img" name="img">
+                            <button type="button" class="add-btn">新增</button>
+                            <button type="reset">重置</button>
+                        </form>
+                    </div>
+                    <div class="modify_news">
+                        <form action="#" method="post">
+                            <label for="#">修改内容：</label>
+                            <input type="text" class="title_input" placeholder="title" name="title">
+                            <input type="text" class="img_input" placeholder="img" name="img">
+                            <button type="button" class="modify-sub-btn">提交</button>
+                            <button type="reset">重置</button>
+                        </form>        
+                    </div>
+                </div>
+            </article>
+        </content>
+    </div>
+    <!-- Bootstrap core JavaScript
+================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="/javascripts/jquery.min.js"></script>
+    <script src="/javascripts/bootstrap.min.js"></script>
+    <script src="/javascripts/moment.min.js"></script>
+    <script type="text/javascript" src="/javascripts/manage.js"></script>
+</body>
+
+</html>

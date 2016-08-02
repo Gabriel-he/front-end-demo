@@ -1,0 +1,354 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+/*IE6hack,除去默认scrollbar*/
+html {
+    overflow: auto;
+}
+/*铺满整个页面*/
+html, body {
+    height: 100%;
+}
+/*包含对最小高宽的IE hack*/
+.outer {
+    height: 100%;
+    width: 100%;
+    position: relative;
+    min-height: 600px;
+    _height: auto !important;
+    _height: 600px;
+    min-width: 810px;
+    _width: expression(document.body.clientWidth < 811 ? "810px": "auto");
+}
+/*IE缩放图像hack*/
+img {
+    -ms-interpolation-mode: bicubic;
+}
+
+
+/* nav使用样式 */
+
+#nav {
+    width: 320px;
+    _width: 350px;
+    width /*\**/: 340px;
+    height: 30px;
+    font: 13px arial;
+    font-weight: bold;
+    margin-top: 20px;
+    line-height: 30px;
+    float: right;
+    display: inline;
+    margin-right: 100px;
+    _margin-right: 110px;
+}
+
+
+/* 顶部链接使用样式 */
+
+.a_top {
+    color: #333;
+    margin-right: 20px;
+}
+
+.a_top:hover {
+    color: #4F00CC
+}
+
+
+/*正文区域样式*/
+
+.article {
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    margin-top: -95px;
+    margin-left: -325px;
+    _position: relative;
+    _zoom: 1;
+    text-align: center;
+    width: 650px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.div_pop {
+    position: absolute;
+    right: 10px;
+    /*height: 100%;*/
+}
+
+
+/* 通过hover改变原始div样式 */
+
+.div_pop:hover {
+    width: 100px;
+    height: 100%;
+    top: 0;
+    background-color: #F9F9F9;
+    position: absolute;
+    display: block;
+    /*float: right;*/
+}
+
+
+/* 侧边弹出栏原始样式 */
+
+#sidebar {
+    width: 100px;
+    height: 24px;
+    color: white;
+    font: 13px arial;
+    text-align: center;
+    line-height: 24px;
+    background: #3385ff;
+    outline: medium;
+    -webkit-appearance: none;
+    -webkit-border-radius: 0;
+    margin-top: 22px;
+}
+
+
+/* 通过hover改变侧边弹出栏样式 */
+
+#sidebar:hover {
+    color: black;
+    background: #F9F9F9;
+}
+
+
+/*二级菜单div*/
+
+.div_pop2 {
+    width: 100px;
+    height: 80px;
+    text-align: center;
+    display: none;
+}
+
+.div_pop:hover .div_pop2 {
+    display: block;
+}
+
+
+/*百度图标*/
+
+#div_bdimg {
+    margin: 0 auto;
+    position: absolute;
+    text-align: center;
+    top: 10%;
+    left: 39%;
+}
+
+
+/*二级菜单小图标样式*/
+
+.img_pop {
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+
+/* 二级菜单a标签通用 */
+
+.a_pop {
+    font: 13px arial;
+    color: #666666;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+/* 二级菜单“全部产品”a标签使用 */
+
+.a_pop2 {
+    font: 13px arial;
+    color: #666666;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+
+/*相机button*/
+/*IE6 hack 使其不显示此特性*/
+.soutu-btn {
+    position /**/: absolute;
+    text-align /**/: end;
+    z-index /**/: 10;
+    right /**/: 11px;
+    margin-top /**/: 8px;
+
+    height /**/: 16px;
+    width /**/: 72px;
+    width /**/: 115px\0;
+    cursor /**/: pointer;
+    background /**/: transparent url(./icon_pics/camera1.png) no-repeat;
+    background-image /**/: -webkit-image-set(url(./icon_pics/camera1.png) 1x, url(./icon_pics/camera2.png) 2x);
+
+}
+/*火狐hack*/
+
+@-moz-document url-prefix() {
+    .soutu-btn {
+        width: 125px;
+    }
+}
+
+#search_frame {
+    width: 539px;
+    position: absolute;
+    top: 33%;
+    left: 25%;
+    text-align: center;
+}
+
+
+/* 搜索输入框样式 */
+
+#input_frame {
+    width: 539px;
+    height: 32px;
+    font: 16px/18px arial;
+    /*margin-left: -90px;*/
+    _position: relative;
+    _zoom: 1;
+    _line-height: 32px;
+    outline: 0;
+    text-indent: 7px;
+    border: 1px solid #ccc;
+    float: left;
+}
+
+#input_frame:hover {
+    border-color: #999;
+}
+
+#input_frame:focus {
+    border-color: #38f;
+}
+
+#submit_btn {
+    /*position: absolute;*/
+    float: left;
+    width: 100px;
+    height: 34px;
+    /*top: -6px;*/
+    color: white;
+    font-size: 15px;
+    letter-spacing: 1px;
+    background: #3385ff;
+    border-bottom: 1px solid #2d78f4;
+    outline: medium;
+    -webkit-appearance: none;
+    -webkit-border-radius: 0;
+    /*margin-top: -2px;
+    _margin-top: 7px;
+    margin-top: -2px\0;
+    margin-left: -2px;
+    _margin-left: -3px;
+    margin-left: -4px\0;*/
+    cursor: pointer;
+    outline: 0;
+    border: none;
+}
+
+
+/*火狐hack*/
+
+@-moz-document url-prefix() {
+    #submit_btn {
+        margin-top: 0px;
+        margin-left: -4px;
+    }
+}
+
+#submit_btn:hover {
+    box-shadow: 0px 1px 7px 1px #CEC7CF;
+    /* 浏览器兼容，下同 */
+    -moz-box-shadow: 0px 1px 7px 1px #CEC7CF;
+    -webkit-box-shadow: 0px 1px 7px 1px #CEC7CF;
+}
+
+
+/*底部*/
+
+#footer {
+    height: 80px;
+    width: 650px;
+    position: absolute;
+    text-align: center;
+    left: 50%;
+    margin-left: -325px;
+    _margin-left: -315px;
+    bottom: 20px;
+    _display: inline;
+    display: inline\0;
+}
+
+
+/*二维码文字*/
+
+.qrcode_text {
+    float: left;
+    width: 80px;
+    display: inline;
+    line-height: 200%;
+    text-align: left;
+    font: 12px arial;
+    color: #999999;
+}
+
+.qr_img {
+    width: 60px;
+    height: 60px;
+    float: left;
+    _display: inline;
+}
+
+
+/*二维码div*/
+
+#qrcode {
+    width: 320px;
+    _width: 280px;
+    _height: 63px;
+    position: absolute;
+    _position: relative;
+    _zoom: 1;
+    _float: left;
+}
+
+
+/*footer 文字*/
+
+#ft_text {
+    width: 330px;
+    _width: 340px;
+    _height: 80px;
+    position: absolute;
+    margin-top: -5px;
+    _position: relative;
+    _zoom: 1;
+    font: 12px arial;
+    display: inline-block;
+    text-align: left;
+    line-height: 22px;
+    vertical-align: middle;
+    padding-left: 320px\0;
+}
+
+
+/*footer超链接*/
+
+.ft_href {
+    font: 12px arial;
+    color: #999999;
+}
+
+.ft_href2 {
+    font: 12px arial;
+    color: #999999;
+    margin-right: 58px;
+}

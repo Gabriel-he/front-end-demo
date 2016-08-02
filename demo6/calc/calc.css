@@ -1,0 +1,104 @@
+/*使文本处于不可选中*/
+* {
+    -moz-user-select: -moz-none;
+    -moz-user-select: none;
+    -o-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+body {
+    height: 100%;
+    width: 100%;
+}
+
+.container {
+    width: 350px;
+    text-align: center;
+    margin: 50px auto;
+    border: 1px solid grey;
+    background-color: #eee;
+}
+
+.out-put-con {
+    width: 95%;
+    height: 60px;
+    margin: 10px auto;
+    border: 1px solid transparent;
+    border-radius: 5px;
+    background-color: #4F4F4F;
+    text-align: right;
+}
+
+.out-put {
+    color: white;
+    font-size: 30px;
+    line-height: 60px;
+    margin-right: 10px;
+}
+
+.btn-table {
+    border: 1px solid black;
+    margin: 5px auto;
+}
+
+.btn {
+    width: 77px;
+    height: 60px;
+    font-size: 20px;
+}
+
+.number-btn {
+    background-color: #ccc;
+    /*animation:none;*/
+}
+
+.operator-btn {
+    background-color: #FFA500;
+}
+.operator-btn2 {
+    background-color:#DC143C;
+}
+
+
+/*以下样式用于按键点击时的响应动画*/
+
+
+/*数字键样式*/
+
+@keyframes click1 {
+    0% {}
+    50% {
+        background-color: #E8E8E8;
+    }
+    100% {
+        background-color: #ccc;
+    }
+}
+
+
+/*运算符键样式*/
+
+@keyframes click2 {
+    0% {}
+    50% {
+        background-color: #FFBF51;
+    }
+    100% {
+        background-color: #FFA500;
+    }
+}
+
+
+/*=键动画样式*/
+
+@keyframes click3 {
+    0% {}
+    50% {
+        background-color: #EF5775;
+    }
+    100% {
+        background-color: #DC143C;
+    }
+}

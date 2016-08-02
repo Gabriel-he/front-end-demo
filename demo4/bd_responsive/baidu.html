@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en" style="height:100% width:100%">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <title>百度一下，你就知道</title>
+    <link rel="stylesheet" type="text/css" href="./baidu.css">
+</head>
+
+<body>
+    <!---------------------------PC端-------------------------->
+    <div class="outer">
+        <!--顶部链接-->
+        <div id="nav">
+            <a href="http://www.nuomi.com/?cid=002540" class="a_top">糯米</a>
+            <a href="http://news.baidu.com/" class="a_top">新闻</a>
+            <a href="http://www.hao123.com/" class="a_top">hao123</a>
+            <a href="http://map.baidu.com/" class="a_top">地图</a>
+            <a href="http://v.baidu.com/" class="a_top">视频</a>
+            <a href="http://tieba.baidu.com/" class="a_top">贴吧</a>
+        </div id=nav>
+        <!-- 以下实现侧边产品栏 -->
+        <div class="div_pop">
+            <div id="sidebar">
+                更多产品
+            </div>
+            <div class="div_pop2">
+                <img src="./icon_pics/music.png" class="img_pop">
+                <br>
+                <a href="http://music.baidu.com/" class="a_pop">音乐</a>
+            </div>
+            <div class="div_pop2">
+                <img src="./icon_pics/pic.png" class="img_pop">
+                <br>
+                <a href="http://music.baidu.com/" class="a_pop">图片</a>
+            </div>
+            <div class="div_pop2">
+                <img src="./icon_pics/question.png" class="img_pop">
+                <br>
+                <a href="http://music.baidu.com/" class="a_pop">知道</a>
+            </div>
+            <div class="div_pop2">
+                <img src="./icon_pics/book.png" class="img_pop">
+                <br>
+                <a href="http://music.baidu.com/" class="a_pop">书库</a>
+            </div>
+            <div class="div_pop2">
+                <img src="./icon_pics/chart.png" class="img_pop">
+                <br>
+                <a href="http://music.baidu.com/" class="a_pop">风云榜</a>
+            </div>
+            <div class="div_pop2">
+                <img src="./icon_pics/earth.png" class="img_pop">
+                <br>
+                <a href="http://music.baidu.com/" class="a_pop">百度推广</a>
+            </div>
+            <div class="div_pop2" style="margin-top:20px">
+                <a href="https://www.baidu.com/more/" class="a_pop2">全部产品>></a>
+            </div>
+        </div>
+        <!-- 产品栏end -->
+        <!--中间图片及输入框-->
+        <div class="article">
+            <img src="./icon_pics/bd_logo.png" width="270" height="129" alt="百度一下" />
+            <form>
+                <br>
+                <label style="position:relative">
+                    <input id="input_frame" value="" maxlength="255" autocomplete="off" autofocus="">
+                    <span class="soutu-btn"></span>
+                    <input type="submit" name="" id="submit_btn" value="百度一下">
+                </label>
+            </form>
+        </div>
+        <!--底部-->
+        <div id="footer">
+            <!-- 左边二维码 -->
+            <div id="qrcode">
+                <div class="qr_img">
+                    <img src="./icon_pics/qr1.png" id="mobile_baidu">
+                </div>
+                <div class="qrcode_text">
+                    <p style="color:#666666;margin:8px 0 15px 0"><b>手机百度</b></p>
+                    <p><span>快人一步</span></p>
+                    <br>
+                </div>
+                <div class="qr_img">
+                    <img src="./icon_pics/qr2.png" id="baidu_nuomi">
+                </div>
+                <div class="qrcode_text">
+                    <p style="color:#666666;margin:8px 0 15px 0"><b>百度糯米</b></p>
+                    <p><span>一元大餐</span></p>
+                    <br>
+                </div>
+            </div>
+            <div></div>
+            <!-- 右边文本及超链接 -->
+            <div id="ft_text">
+                <div></div>
+                <a class="ft_href2" href="//www.baidu.com/cache/sethelp/help.html">把百度设为主页</a>
+                <a class="ft_href2" href="http://home.baidu.com/">关于百度</a>
+                <a class="ft_href" href="http://ir.baidu.com/">About  Baidu</a>
+                <br>
+                <span class="ft_href">&copy;2016 Baidu</span>
+                <a class="ft_href" href="http://www.baidu.com/duty/">使用百度前必读</a>
+                <a class="ft_href" href="http://jianyi.baidu.com/">意见反馈</a>
+                <span class="ft_href">京ICP证030173号<img src="./icon_pics/police1.png"></span>
+                <br>
+                <span class="ft_href"><img src="./icon_pics/police2.png">京公网安备11000002000001号</span>
+            </div>
+        </div>
+    </div>
+    <!------------------------- 手机端 ------------------------>
+    <div class="outer_mobile">
+        <div class="header_mobile">
+            <div class="weather">
+                <i class="icon" id="weather-icon"></i>
+                <div class="weather-num">28°</div>
+                <div class="weather-status">
+                    <p style="padding-top:5px">成都</p>
+                    <p>空气&nbsp;81</p>
+                </div>
+            </div>
+            <div class="right_nav">
+                <i class="icon" id="user-icon"></i>
+                <i class="icon" id="skin-icon"></i>
+            </div>
+        </div>
+        <div class="logo_area">
+            <img src="./icon_pics/mobile_logo.png" width="175" height="55" alt="百度一下,你就知道">
+        </div>
+        <div class="con-wrap">
+            <input type="text" autocomplete="off" autocorrect="off" maxlength="64" id="index-kw">
+            <i class="icon" id="mic_icon"></i>
+            <button id="index-bn" class="se-bn" type="submit">百度一下</button>
+        </div>
+        <!-- 百度产品 -->
+        <div class="service">
+            <div class="service-box" id="m-news">
+                <div class="service-container">
+                    <i class="icon" id="news-icon"></i>
+                    <a href="http://m.news.baidu.com/news?fr=mohome&amp;ssid=0&amp;from=844b&amp;uid=&amp;pu=sz%401320_2001%2Cta%40iphone_1_9.1_3_601&amp;bd_page_type=1">新闻</a>
+                </div>
+            </div>
+            <div class="service-box" id="m-novel">
+                <div class="service-container">
+                    <i class="icon" id="novel-icon"></i>
+                    <a href="http://dushu.baidu.com">小说</a>
+                </div>
+            </div>
+            <div class="service-box" id="m-vedio">
+                <div class="service-container">
+                    <i class="icon" id="vedio-icon"></i>
+                    <a href="http://video.m.baidu.com/?from=wise_nav">视频</a>
+                </div>
+            </div>
+            <div class="service-box" id="m-nuomi">
+                <div class="service-container">
+                    <i class="icon" id="nuomi-icon"></i>
+                    <a href="http://life.m.baidu.com?sfrom=wise_nav">糯米</a>
+                </div>
+            </div>
+            <div class="service-box" id="m-map">
+                <div class="service-container">
+                    <i class="icon" id="map-icon"></i>
+                    <a href="http://map.baidu.com/mobile/webapp/index/index/?itj=<45>    <div></45>&amp;wtj=wi&amp;ssid=0&am
+                p;from=844b&amp;uid=&amp;pu=sz%401320_2001%2Cta%40iphone_1_9.1_3_601&amp;bd_page_type=1">地图</a>
+                </div>
+            </div>
+            <div class="service-box" id="m-more">
+                <div class="service-container">
+                    <i class="icon" id="more-icon"></i>
+                    <a href="#">更多</a>
+                </div>
+            </div>
+        </div>
+        <!-- 我的导航 -->
+        <div class="nav-box">
+            <div class="nav-title">
+                <span style="line-height: 175%;">我的导航</span>
+                <i class="icon" id="dot-icon"></i>
+            </div>
+            <div class="nav-col">
+                <a href="#">资讯</a>
+                <a href="#">hao123</a>
+                <a href="#">图片</a>
+                <a href="#">爱奇艺</a>
+            </div>
+            <div class="nav-col">
+                <a href="#">美女</a>
+                <a href="#">音乐</a>
+                <a href="#">笑话
+                <a href="#"><i class="icon" id="plus-icon"></i></a>
+            </div>
+        </div>
+        <!-- 时事热点 -->
+        <div class="hot-box">
+            <div class="hot-title nav-title">
+                <span class="hot-nav-l">实时热点</span>
+                <div class="hot-nav-r">
+                    <i class="icon" id="dot-icon2"></i>
+                    <span>换一批</span>
+                    <i class="icon" id="circle-icon"></i>       
+                </div>    
+            </div>
+            <div class="hot-content">
+                <a href="#" class="l-col">李宗瑞狱中生活爽</a>
+                <a href="#" class="r-col">北京高考状元揭晓</a>
+                <a href="#" class="l-col">奥迪深夜飞跃高架</a>
+                <a href="#" class="r-col">女生大尺度毕业照</a>
+                <a href="#" class="l-col">徐州最大毒案判决</a>
+                <a href="#" class="r-col">杨紫深夜与人冲突</a>
+            </div>
+            <a href="http://top.baidu.com/m?csrc=fyb_wiserdcard_auto" class="billborad">百度风云榜></a>
+        </div>
+    </div>
+</body>
+
+</html>

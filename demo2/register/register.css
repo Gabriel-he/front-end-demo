@@ -1,0 +1,65 @@
+/*大表格样式*/
+    
+    .bigtable {
+        font-size: 12px;
+        line-height: 150%;
+        margin: 0 auto;
+        width: 637px;
+        border-collapse: collapse;
+        border: 1px solid #CCCCCC;
+    }
+    /*外部div*/
+    
+    .outer {
+        background-color: white;
+        width: 710px;
+        height: 2675px;
+        margin: 0 auto;
+        margin-bottom: 20px;
+        -webkit-border-radius: 28px;
+        /* 控制边框圆角 */
+    }
+    
+    .footer {
+        text-align: center;
+        position: relative;
+        margin-bottom: 30px;
+    }
+    /* 重写表头 */
+    
+    th {
+        font-weight: normal;
+        text-align: end;
+    }
+    /*区域表头文字*/
+    
+    .area_headline {
+        font-size: 13px;
+        font-weight: bold;
+        text-align: left;
+        color: #003399;
+        background-color: #EEEEEE;
+    }
+    
+    .article {
+        text-align: left;
+        color: blue;
+    }
+    
+    .link {
+        font-size: 12px;
+        font-weight: 150%;
+        color: #FF0099;
+        text-decoration: none;
+    }
+    
+    #title {
+        font-size: 18px;
+        font-weight: bold;
+        color: #333333;
+    }
+    
+    #bottom_line {
+        font-size: 12px;
+        color: #666666;
+    }

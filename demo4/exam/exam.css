@@ -1,0 +1,30 @@
+body{
+	background-color: #3A9AC4;
+}
+p{
+	line-height: 150%;
+}
+#content{
+	width: 80%;
+	margin: 0 auto;
+	background-color: #eee;
+	border-radius: 10px;
+	padding:20px 30px;
+}
+
+.codeText {
+    border-right: #a5a5f8 1px solid;
+    padding-right: 0px;
+    border-top: #a5a5f8 1px solid;
+    padding-left: 0px;
+    background: #fff;
+    padding-bottom: 5px;
+    margin: 8px 0px 1.1em;
+    font: 12px "Courier New", Monospace;
+    overflow: hidden;
+    border-left: #a5a5f8 1px solid;
+    width: 98%;
+    word-break: break-all;
+    padding-top: 0px;
+    border-bottom: #a5a5f8 1px solid;
+}

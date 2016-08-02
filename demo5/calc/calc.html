@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>计算器程序</title>
+	<link rel="stylesheet" type="text/css" href="calc.css">
+    <script src="./calc.js"></script>
+</head>
+
+<body>
+	<!-- 输入域 -->
+    <div id="container1">
+        <input type="text" name="score1" class="score" placeholder="请输入数据A：">
+        <select name="select_oprt">
+        	<option value="+">+</option>
+        	<option value="-">-</option>
+        	<option value="*">*</option>
+        	<option value="/">/</option>
+        </select>
+        <input type="text" name="score2" class="score" placeholder="请输入数据B：">
+        <input type="button" id="_button" onclick="_click()" value="确定" /> 
+    </div>
+    <!-- 输出域 -->
+    <h2 id="outcome"></h2>
+    <!-- 外联js -->
+    <script src="./calc.js"></script>	
+</body>
+
+</html>

@@ -1,0 +1,302 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"re",
+				"required	Attr"
+			],
+			[
+				"pos",
+				"position"
+			],
+			[
+				"f",
+				"footer	Tag"
+			],
+			[
+				"margin",
+				"margin-bottom"
+			],
+			[
+				"border-c",
+				"border-collapse"
+			],
+			[
+				"bor",
+				"border"
+			],
+			[
+				"border",
+				"border-collapse"
+			],
+			[
+				"he",
+				"height	Attr"
+			],
+			[
+				"bacl",
+				"background-color"
+			],
+			[
+				"mai",
+				"margin-right"
+			],
+			[
+				"bakc",
+				"background-color"
+			],
+			[
+				"font",
+				"font-weight"
+			],
+			[
+				"fon",
+				"font	Tag"
+			],
+			[
+				"text",
+				"text-align"
+			],
+			[
+				"col",
+				"color"
+			],
+			[
+				"in",
+				"input	Tag"
+			],
+			[
+				"op",
+				"option	Tag"
+			],
+			[
+				"se",
+				"select	Tag"
+			],
+			[
+				"magin",
+				"margin-left"
+			],
+			[
+				"fol",
+				"float"
+			],
+			[
+				"al",
+				"align-self"
+			],
+			[
+				"back",
+				"background-color"
+			],
+			[
+				"l",
+				"left"
+			],
+			[
+				"wid",
+				"width"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 191.0,
+		"last_filter": "install",
+		"selected_items":
+		[
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"upd",
+				"Package Control: Upgrade Package"
+			],
+			[
+				"Package Control: pr",
+				"Package Control: Discover Packages"
+			]
+		],
+		"width": 374.0
+	},
+	"console":
+	{
+		"height": 118.0,
+		"history":
+		[
+			"html",
+			"import urllib.request,os,hashlib; h = '2915d1851351e5ee549c20394736b442' + '8bc59f460fa1548d1514676163dafc88'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/C/Users/Gabriel/AppData/Roaming/Sublime Text 3/Packages/User/Preferences.sublime-settings",
+		"/C/Users/Gabriel/Desktop/web/Task2/register.css",
+		"/C/Users/Gabriel/Desktop/web/Task2/register.html",
+		"/C/Users/Gabriel/Desktop/web/Task2/cross/div.css",
+		"/C/Users/Gabriel/Desktop/web/Task2/cross/div.html",
+		"/C/Users/Gabriel/Desktop/web/Task2/div.html",
+		"/C/Users/Gabriel/Desktop/web/Task2/ttt.html",
+		"/C/Users/Gabriel/Desktop/web/Task2/ttt.css",
+		"/C/Users/Gabriel/Desktop/web/Task1/table.html",
+		"/C/Users/Gabriel/Desktop/web/index_t.html",
+		"/C/Users/Gabriel/Desktop/web/Task1/index.html",
+		"/C/Users/Gabriel/Desktop/web/index.html",
+		"/C/Users/Gabriel/Desktop/index.html",
+		"/D/Program Files/Sublime Text 3/index.html",
+		"/C/Users/Gabriel/AppData/Roaming/Sublime Text 3/Packages/HTML-CSS-JS Prettify/HTMLPrettify.sublime-settings",
+		"/D/Program Files/Sublime Text 3/11.html"
+	],
+	"find":
+	{
+		"height": 31.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"*",
+			"font",
+			"table",
+			"area_headline",
+			"此",
+			"自我特",
+			"table",
+			"colspan",
+			"*",
+			">\n",
+			"129"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"<font color=\"red\">*</font>"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 31.0
+	},
+	"input":
+	{
+		"height": 38.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "register.sublime-project",
+	"replace":
+	{
+		"height": 58.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 150.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

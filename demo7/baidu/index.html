@@ -1,0 +1,795 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>百度一下，你就知道</title>
+    <link rel="stylesheet" href="css/index.css">
+</head>
+
+<body>
+    <!-- 换肤模块，默认隐藏 -->
+    <div class="skin-container">
+        <div class="skin-header">
+            <ul class="skin-kind-list">
+                <li class="skin-kind-li sk-chosen">热门</li>
+                <li class="skin-kind-li">游戏</li>
+                <li class="skin-kind-li">卡通</li>
+                <li class="skin-kind-li">女神降临</li>
+                <li class="skin-kind-li">明星</li>
+                <li class="skin-kind-li">风景</li>
+                <li class="skin-kind-li">简约</li>
+                <li class="skin-kind-li">小清新</li>
+                <div class="no-skin-wrap">
+                    <i class="skin-icon icon-x"></i>
+                    <span>不使用皮肤</span>
+                </div>
+                <div class="slide-up-wrap">
+                    <i class="skin-icon icon-up"></i>
+                    <span>收起</span>
+                </div>
+            </ul>
+        </div>
+        <div class="skin-content">
+            <div class="pics-wrap">
+                <div class="pics-preview pp-chosen">
+                    <div class="pic-box">
+                        <img src="imgs/skin-bg/1.jpg" alt="light" width="192px">
+                    </div>
+                    <div class="pic-box">
+                        <img src="imgs/skin-bg/2.jpg" alt="light" width="96px">
+                    </div>
+                    <div class="pic-box">
+                        <img src="imgs/skin-bg/3.jpg" alt="light" width="96px">
+                    </div>
+                    <div class="pic-box">
+                        <img src="imgs/skin-bg/4.jpg" width="96px">
+                    </div>
+                    <div class="pic-box">
+                        <img src="imgs/skin-bg/5.jpg" alt="light" width="96px">
+                    </div>
+                    <div class="pic-box">
+                        <img src="imgs/skin-bg/6.jpg" alt="light" width="96px" class="pic-up1">
+                    </div>
+                    <div class="pic-box">
+                        <img src="imgs/skin-bg/7.jpg" alt="light" width="192px" class="pic-up1 pic-left1">
+                    </div>
+                    <div class="pic-box">
+                        <img src="imgs/skin-bg/8.jpg" width="96px" class="pic-up1 pic-left1">
+                    </div>
+                    <div class="pic-box">
+                        <img src="imgs/skin-bg/9.jpg" width="96px" class="pic-up1 pic-left1">
+                    </div>
+                    <div class="pic-box">
+                        <img src="imgs/skin-bg/10.jpg" width="96px" class="pic-up2">
+                    </div>
+                    <div class="pic-box">
+                        <img src="imgs/skin-bg/11.jpg" width="96px" class="pic-up2">
+                    </div>
+                    <div class="pic-box">
+                        <img src="imgs/skin-bg/12.jpg" width="96px" class="pic-up2">
+                    </div>
+                </div>
+                <div class="pics-preview">
+                    <div class="pic-box">
+                        <img src="imgs/skin-bg/3.jpg" alt="light" width="192px">
+                    </div>
+                    <div class="pic-box">
+                        <img src="imgs/skin-bg/2.jpg" alt="light" width="96px">
+                    </div>
+                    <div class="pic-box">
+                        <img src="imgs/skin-bg/1.jpg" alt="light" width="96px">
+                    </div>
+                    <div class="pic-box">
+                        <img src="imgs/skin-bg/4.jpg" width="96px">
+                    </div>
+                    <div class="pic-box">
+                        <img src="imgs/skin-bg/5.jpg" alt="light" width="96px">
+                    </div>
+                    <div class="pic-box">
+                        <img src="imgs/skin-bg/6.jpg" alt="light" width="96px" class="pic-up1">
+                    </div>
+                    <div class="pic-box">
+                        <img src="imgs/skin-bg/10.jpg" width="192px" class="pic-up1 pic-left1">
+                    </div>
+                    <div class="pic-box">
+                        <img src="imgs/skin-bg/8.jpg" width="96px" class="pic-up1 pic-left1">
+                    </div>
+                    <div class="pic-box">
+                        <img src="imgs/skin-bg/9.jpg" width="96px" class="pic-up1 pic-left1">
+                    </div>
+                    <div class="pic-box">
+                        <img src="imgs/skin-bg/7.jpg" alt="light" width="96px" class="pic-up2">
+                    </div>
+                    <div class="pic-box">
+                        <img src="imgs/skin-bg/11.jpg" width="96px" class="pic-up2">
+                    </div>
+                    <div class="pic-box">
+                        <img src="imgs/skin-bg/12.jpg" width="96px" class="pic-up2">
+                    </div>
+                </div>
+                <div class="pics-preview">
+                    <div class="pic-box">
+                        <img src="imgs/skin-bg/2.jpg" alt="light" width="192px">
+                    </div>
+                    <div class="pic-box">
+                        <img src="imgs/skin-bg/1.jpg" alt="light" width="96px">
+                    </div>
+                    <div class="pic-box">
+                        <img src="imgs/skin-bg/3.jpg" alt="light" width="96px">
+                    </div>
+                    <div class="pic-box">
+                        <img src="imgs/skin-bg/4.jpg" width="96px">
+                    </div>
+                    <div class="pic-box">
+                        <img src="imgs/skin-bg/5.jpg" alt="light" width="96px">
+                    </div>
+                    <div class="pic-box">
+                        <img src="imgs/skin-bg/7.jpg" alt="light" width="96px" class="pic-up1">
+                    </div>
+                    <div class="pic-box">
+                        <img src="imgs/skin-bg/6.jpg" alt="light" width="192px" class="pic-up1 pic-left1">
+                    </div>
+                    <div class="pic-box">
+                        <img src="imgs/skin-bg/8.jpg" width="96px" class="pic-up1 pic-left1">
+                    </div>
+                    <div class="pic-box">
+                        <img src="imgs/skin-bg/9.jpg" width="96px" class="pic-up1 pic-left1">
+                    </div>
+                    <div class="pic-box">
+                        <img src="imgs/skin-bg/10.jpg" width="96px" class="pic-up2">
+                    </div>
+                    <div class="pic-box">
+                        <img src="imgs/skin-bg/11.jpg" width="96px" class="pic-up2">
+                    </div>
+                    <div class="pic-box">
+                        <img src="imgs/skin-bg/12.jpg" width="96px" class="pic-up2">
+                    </div>
+                </div>
+                <div class="pics-preview">
+                    <div class="pic-box">
+                        <img src="imgs/skin-bg/4.jpg" width="192px">
+                    </div>
+                    <div class="pic-box">
+                        <img src="imgs/skin-bg/2.jpg" alt="light" width="96px">
+                    </div>
+                    <div class="pic-box">
+                        <img src="imgs/skin-bg/3.jpg" alt="light" width="96px">
+                    </div>
+                    <div class="pic-box">
+                        <img src="imgs/skin-bg/1.jpg" alt="light" width="96px">
+                    </div>
+                    <div class="pic-box">
+                        <img src="imgs/skin-bg/7.jpg" alt="light" width="96px">
+                    </div>
+                    <div class="pic-box">
+                        <img src="imgs/skin-bg/6.jpg" alt="light" width="96px" class="pic-up1">
+                    </div>
+                    <div class="pic-box">
+                        <img src="imgs/skin-bg/5.jpg" alt="light" width="192px" class="pic-up1 pic-left1">
+                    </div>
+                    <div class="pic-box">
+                        <img src="imgs/skin-bg/8.jpg" width="96px" class="pic-up1 pic-left1">
+                    </div>
+                    <div class="pic-box">
+                        <img src="imgs/skin-bg/9.jpg" width="96px" class="pic-up1 pic-left1">
+                    </div>
+                    <div class="pic-box">
+                        <img src="imgs/skin-bg/10.jpg" width="96px" class="pic-up2">
+                    </div>
+                    <div class="pic-box">
+                        <img src="imgs/skin-bg/11.jpg" width="96px" class="pic-up2">
+                    </div>
+                    <div class="pic-box">
+                        <img src="imgs/skin-bg/12.jpg" width="96px" class="pic-up2">
+                    </div>
+                </div>
+                <div class="pics-preview">
+                    <div class="pic-box">
+                        <img src="imgs/skin-bg/5.jpg" alt="light" width="192px">
+                    </div>
+                    <div class="pic-box">
+                        <img src="imgs/skin-bg/2.jpg" alt="light" width="96px">
+                    </div>
+                    <div class="pic-box">
+                        <img src="imgs/skin-bg/3.jpg" alt="light" width="96px">
+                    </div>
+                    <div class="pic-box">
+                        <img src="imgs/skin-bg/4.jpg" width="96px">
+                    </div>
+                    <div class="pic-box">
+                        <img src="imgs/skin-bg/1.jpg" alt="light" width="96px">
+                    </div>
+                    <div class="pic-box">
+                        <img src="imgs/skin-bg/6.jpg" alt="light" width="96px" class="pic-up1">
+                    </div>
+                    <div class="pic-box">
+                        <img src="imgs/skin-bg/11.jpg" width="192px" class="pic-up1 pic-left1">
+                    </div>
+                    <div class="pic-box">
+                        <img src="imgs/skin-bg/8.jpg" width="96px" class="pic-up1 pic-left1">
+                    </div>
+                    <div class="pic-box">
+                        <img src="imgs/skin-bg/9.jpg" width="96px" class="pic-up1 pic-left1">
+                    </div>
+                    <div class="pic-box">
+                        <img src="imgs/skin-bg/10.jpg" width="96px" class="pic-up2">
+                    </div>
+                    <div class="pic-box">
+                        <img src="imgs/skin-bg/7.jpg" alt="light" width="96px" class="pic-up2">
+                    </div>
+                    <div class="pic-box">
+                        <img src="imgs/skin-bg/12.jpg" width="96px" class="pic-up2">
+                    </div>
+                </div>
+                <div class="pics-preview">
+                    <div class="pic-box">
+                        <img src="imgs/skin-bg/12.jpg" width="192px">
+                    </div>
+                    <div class="pic-box">
+                        <img src="imgs/skin-bg/2.jpg" alt="light" width="96px">
+                    </div>
+                    <div class="pic-box">
+                        <img src="imgs/skin-bg/3.jpg" alt="light" width="96px">
+                    </div>
+                    <div class="pic-box">
+                        <img src="imgs/skin-bg/4.jpg" width="96px">
+                    </div>
+                    <div class="pic-box">
+                        <img src="imgs/skin-bg/5.jpg" alt="light" width="96px">
+                    </div>
+                    <div class="pic-box">
+                        <img src="imgs/skin-bg/6.jpg" alt="light" width="96px" class="pic-up1">
+                    </div>
+                    <div class="pic-box">
+                        <img src="imgs/skin-bg/9.jpg" width="192px" class="pic-up1 pic-left1">
+                    </div>
+                    <div class="pic-box">
+                        <img src="imgs/skin-bg/8.jpg" width="96px" class="pic-up1 pic-left1">
+                    </div>
+                    <div class="pic-box">
+                        <img src="imgs/skin-bg/7.jpg" alt="light" width="96px" class="pic-up1 pic-left1">
+                    </div>
+                    <div class="pic-box">
+                        <img src="imgs/skin-bg/10.jpg" width="96px" class="pic-up2">
+                    </div>
+                    <div class="pic-box">
+                        <img src="imgs/skin-bg/11.jpg" width="96px" class="pic-up2">
+                    </div>
+                    <div class="pic-box">
+                        <img src="imgs/skin-bg/1.jpg" alt="light" width="96px" class="pic-up2">
+                    </div>
+                </div>
+                <div class="pics-preview">
+                    <div class="pic-box">
+                        <img src="imgs/skin-bg/11.jpg" width="192px">
+                    </div>
+                    <div class="pic-box">
+                        <img src="imgs/skin-bg/2.jpg" alt="light" width="96px">
+                    </div>
+                    <div class="pic-box">
+                        <img src="imgs/skin-bg/3.jpg" alt="light" width="96px">
+                    </div>
+                    <div class="pic-box">
+                        <img src="imgs/skin-bg/4.jpg" width="96px">
+                    </div>
+                    <div class="pic-box">
+                        <img src="imgs/skin-bg/5.jpg" alt="light" width="96px">
+                    </div>
+                    <div class="pic-box">
+                        <img src="imgs/skin-bg/6.jpg" alt="light" width="96px" class="pic-up1">
+                    </div>
+                    <div class="pic-box">
+                        <img src="imgs/skin-bg/9.jpg" width="192px" class="pic-up1 pic-left1">
+                    </div>
+                    <div class="pic-box">
+                        <img src="imgs/skin-bg/8.jpg" width="96px" class="pic-up1 pic-left1">
+                    </div>
+                    <div class="pic-box">
+                        <img src="imgs/skin-bg/7.jpg" alt="light" width="96px" class="pic-up1 pic-left1">
+                    </div>
+                    <div class="pic-box">
+                        <img src="imgs/skin-bg/10.jpg" width="96px" class="pic-up2">
+                    </div>
+                    <div class="pic-box">
+                        <img src="imgs/skin-bg/1.jpg" alt="light" width="96px" class="pic-up2">
+                    </div>
+                    <div class="pic-box">
+                        <img src="imgs/skin-bg/12.jpg" width="96px" class="pic-up2">
+                    </div>
+                </div>
+                <div class="pics-preview">
+                    <div class="pic-box">
+                        <img src="imgs/skin-bg/8.jpg" width="192px">
+                    </div>
+                    <div class="pic-box">
+                        <img src="imgs/skin-bg/7.jpg" alt="light" width="96px">
+                    </div>
+                    <div class="pic-box">
+                        <img src="imgs/skin-bg/3.jpg" alt="light" width="96px">
+                    </div>
+                    <div class="pic-box">
+                        <img src="imgs/skin-bg/4.jpg" width="96px">
+                    </div>
+                    <div class="pic-box">
+                        <img src="imgs/skin-bg/5.jpg" width="96px">
+                    </div>
+                    <div class="pic-box">
+                        <img src="imgs/skin-bg/6.jpg" alt="light" width="96px" class="pic-up1">
+                    </div>
+                    <div class="pic-box">
+                        <img src="imgs/skin-bg/2.jpg" alt="light" width="192px" class="pic-up1 pic-left1">
+                    </div>
+                    <div class="pic-box">
+                        <img src="imgs/skin-bg/1.jpg" alt="light" width="96px" class="pic-up1 pic-left1">
+                    </div>
+                    <div class="pic-box">
+                        <img src="imgs/skin-bg/9.jpg" width="96px" class="pic-up1 pic-left1">
+                    </div>
+                    <div class="pic-box">
+                        <img src="imgs/skin-bg/10.jpg" width="96px" class="pic-up2">
+                    </div>
+                    <div class="pic-box">
+                        <img src="imgs/skin-bg/11.jpg" width="96px" class="pic-up2">
+                    </div>
+                    <div class="pic-box">
+                        <img src="imgs/skin-bg/12.jpg" width="96px" class="pic-up2">
+                    </div>
+                </div>
+                <div class="page-preview">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 换肤模块end -->
+    <header>
+        <!-- 天气栏及二级菜单 -->
+        <div class="weather">
+            <span class="header-wd">成都：</span>
+            <i class="icon w-icon1"></i>
+            <span class="header-wd">22℃</span>
+            <span style="color:yellowgreen"><b>良</b></span>
+            <span class="header-wd">61</span>
+            <span class="vertical-line">|</span>
+            <dl class="weather-box">
+                <dt>
+                    <div class="setting-arrow weather-arrow"></div>
+                    <div class="wb-dt">未来五天天气情况</div>
+                </dt>
+                <dd class="wb-dd-today">
+                    <span>今天(周五)</span>
+                    <br>
+                    <i class="icon2 w-icon2"></i>
+                    <span class="wb-word">22℃</span>
+                    <span class="wb-word">多云</span>
+                    <span class="wb-word">南风微风</span>
+                </dd>
+                <dd class="wb-dd-tomorrow">
+                    <span>明天(周六)</span>
+                    <br>
+                    <i class="icon2 w-icon2"></i>
+                    <span class="wb-word">31~23℃</span>
+                    <span class="wb-word">多云转阵雨</span>
+                    <span class="wb-word">南风微风</span>
+                </dd>
+                <dd class="wb-dd-thirdday">
+                    <span>后天(周日)</span>
+                    <br>
+                    <i class="icon2 w-icon2"></i>
+                    <span class="wb-word">30~22℃</span>
+                    <span class="wb-word">多云</span>
+                    <span class="wb-word">南风微风</span>
+                </dd>
+                <dd class="wb-dd-fourthday">
+                    <span>周一</span>
+                    <br>
+                    <i class="icon2 w-icon3"></i>
+                    <span class="wb-word">31~23℃</span>
+                    <span class="wb-word">小雨</span>
+                    <span class="wb-word">南风微风</span>
+                </dd>
+                <dd class="wb-dd-fifthday">
+                    <span>周二</span>
+                    <br>
+                    <i class="icon2 w-icon3"></i>
+                    <span class="wb-word">30~23℃</span>
+                    <span class="wb-word">小雨</span>
+                    <span class="wb-word">南风微风</span>
+                </dd>
+            </dl>
+        </div>
+        <a href="#" class="h-a1 header-wd">宝箱</a>
+        <a href="#" class="h-a1 header-wd" id="changeSkin">换肤</a>
+        <a href="#" class="h-a1 header-wd">消息</a>
+        <!-- 页首右部导航 -->
+        <div class="header-right">
+            <div class="right-nav">
+                <a href="http://www.nuomi.com/?cid=002540" class="header-wd">糯米</a>
+                <a href="http://news.baidu.com/" class="header-wd">新闻</a>
+                <a href="http://www.hao123.com/" class="header-wd">hao123</a>
+                <a href="http://map.baidu.com/" class="header-wd">地图</a>
+                <a href="http://v.baidu.com/" class="header-wd">视频</a>
+                <a href="http://tieba.baidu.com/" class="header-wd">贴吧</a>
+            </div>
+            <div class="user-box">
+                <span class="header-wd">user_name</span>
+                <ul class="user-list">
+                    <div class="setting-arrow user-arrow"></div>
+                    <li class="user-li">我的VIP</li>
+                    <li class="user-li">个人中心</li>
+                    <li class="user-li">账号设置</li>
+                    <li class="user-li">意见反馈</li>
+                    <li class="user-li">退出</li>
+                </ul>
+            </div>
+            <div class="prf-box">
+                <span class="header-wd">设置</span>
+                <ul class="prf-list">
+                    <div class="setting-arrow prf-arrow"></div>
+                    <li class="prf-li">搜索设置</li>
+                    <li class="prf-li">高级搜索</li>
+                    <li class="prf-li">关闭预测</li>
+                    <li class="prf-li">搜索历史</li>
+                </ul>
+            </div>
+            <div class="product-box">
+                <span>更多产品</span>
+                <ul class="product-list">
+                    <li class="product-head">
+                        <span>更多产品</span>
+                    </li>
+                    <li class="product-li">
+                        <img src="./imgs/music.png" class="img_pop">
+                        <a href="http://music.baidu.com/">音乐</a>
+                    </li>
+                    <li class="product-li">
+                        <img src="./imgs/pic.png" class="img_pop">
+                        <a href="http://music.baidu.com/">图片</a>
+                    </li>
+                    <li class="product-li">
+                        <img src="./imgs/question.png" class="img_pop">
+                        <a href="http://music.baidu.com/">知道</a>
+                    </li>
+                    <li class="product-li">
+                        <img src="./imgs/book.png" class="img_pop">
+                        <a href="http://music.baidu.com/">书库</a>
+                    </li>
+                    <li class="product-li">
+                        <img src="./imgs/chart.png" class="img_pop">
+                        <a href="http://music.baidu.com/">风云榜</a>
+                    </li>
+                    <li class="product-li">
+                        <img src="./imgs/earth.png" class="img_pop">
+                        <a href="http://music.baidu.com/">百度推广</a>
+                    </li>
+                    <li class="product-li">
+                        <a href="https://www.baidu.com/more/" style="margin-top:0px">全部产品>></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <!-- 正文部分 -->
+    <article>
+        <div class="logo-wrap">
+            <img src="imgs/bd_logo.png" alt="百度一下" width="270" class="bd-log-img">
+        </div>
+        <div class="search-wrap">
+            <form action="#">
+                <input type="text" autofocus="" id="input-frame">
+                <span class="soutu-btn"></span>
+                <input type="submit" name="" id="submit_btn" value="百度一下">
+            </form>
+        </div>
+        <div class="content-wrap" style="background-color:white">
+            <div class="content-nav">
+                <span class="content-tab content-tab-chosen">
+    				<i class="content-icon hum-icon hum-icon-chosen"></i>我的关注
+    			</span>
+                <span class="content-tab">推荐</span>
+                <span class="content-tab">视频</span>
+                <span class="content-tab">购物</span>
+                <i class="content-icon gear-icon"></i>
+            </div>
+            <div class="sorted-content  sorted-content-chosen">
+                <div class="my-nav">
+                    <span id="my-nav-wrap">
+    					<i class="content-icon arrow-icon"></i>
+    					<b>我的导航</b>(33)
+    				</span>
+                </div>
+                <div class="nav-box">
+                    <div class="nav-row">
+                        <span class="nav-title">综合</span>
+                        <span class="nav-link">
+							<i class="site-icon icon-eat"></i>
+		    				<a href="#">美食杰</a>
+	    				</span>
+                        <span class="nav-link">
+							<i class="site-icon icon-wy"></i>
+		    				<a href="#">126</a>
+	    				</span>
+                        <span class="nav-link">
+							<i class="site-icon icon-bd"></i>
+		    				<a href="#">百度地图</a>
+	    				</span>
+                        <span class="nav-link">
+							<i class="site-icon icon-icar"></i>
+		    				<a href="#">爱卡汽车网</a>
+	    				</span>
+                    </div>
+                    <div class="nav-row">
+                        <span class="nav-title">贴吧</span>
+                        <span class="nav-link">
+							<i class="site-icon icon-tieba"></i>
+		    				<a href="#">假货吧</a>
+	    				</span>
+                        <span class="nav-link">
+							<i class="site-icon icon-tieba"></i>
+		    				<a href="#">魔兽世界吧</a>
+	    				</span>
+                    </div>
+                    <div class="nav-row">
+                        <span class="nav-title">社区</span>
+                        <span class="nav-link">
+							<i class="site-icon icon-renren"></i>
+		    				<a href="#">人人网</a>
+	    				</span>
+                        <span class="nav-link">
+							<i class="site-icon icon-gwy"></i>
+		    				<a href="#">公务员考试</a>
+	    				</span>
+                        <span class="nav-link">
+							<i class="site-icon icon-sina"></i>
+		    				<a href="#">新浪微博</a>
+	    				</span>
+                        <span class="nav-link">
+							<i class="site-icon icon-tianya"></i>
+		    				<a href="#">天涯</a>
+	    				</span>
+                        <span class="nav-link">
+							<i class="site-icon icon-lady"></i>
+		    				<a href="#">onlylady论坛</a>
+	    				</span>
+                    </div>
+                    <div class="nav-row">
+                        <span class="nav-link" style="margin-left:100px">
+							<i class="site-icon icon-guimi"></i>
+		    				<a href="#">闺蜜网</a>
+	    				</span>
+                    </div>
+                    <div class="nav-row">
+                        <span class="nav-title">购物</span>
+                        <span class="nav-link">
+							<i class="site-icon icon-jumei"></i>
+		    				<a href="#">聚美优品</a>
+	    				</span>
+                        <span class="nav-link">
+							<i class="site-icon icon-tb"></i>
+		    				<a href="#">聚划算</a>
+	    				</span>
+                        <span class="nav-link">
+							<i class="site-icon icon-tmall"></i>
+		    				<a href="#">淘宝商城</a>
+	    				</span>
+                        <span class="nav-link">
+							<i class="site-icon icon-lashou"></i>
+		    				<a href="#">拉手网</a>
+	    				</span>
+                        <span class="nav-link">
+							<i class="site-icon icon-tb"></i>
+		    				<a href="#">淘宝</a>
+	    				</span>
+                    </div>
+                    <div class="nav-row">
+                        <span class="nav-link" style="margin-left:100px">
+							<i class="site-icon icon-qiantuan"></i>
+		    				<a href="#">千团网</a>
+	    				</span>
+                        <span class="nav-link">
+							<i class="site-icon icon-jd"></i>
+		    				<a href="#">京东商城</a>
+	    				</span>
+                    </div>
+                </div>
+            </div>
+            <div class="sorted-content">
+                <div class="line-bar">
+                    <div class="left-line"></div>
+                    <div class="tips-content">
+                        <i class="site-icon bd-light-icon"></i>
+                        <span>以下信息根据您的兴趣推荐</span>
+                    </div>
+                    <div class="right-line"></div>
+                </div>
+                <div class="news-left">
+                    <div class="news-wrap">
+                        <div class="news-title">
+                            <i class="site-icon icon-hot"></i>
+                            <a href="#"><h2>英尼斯湖边惊现神秘残骸 网友：脱欧把水怪都气死了</h2></a>
+                            <div class="news-footer">
+                                中国日报网 07-01 12:44
+                            </div>
+                        </div>
+                        <div class="news-pic">
+                            <img src="./imgs/news/1.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="news-wrap">
+                        <div class="news-title">
+                            <i class="site-icon icon-hot"></i>
+                            <a href="#"><h2>贵州毕节山体滑坡致29人被埋：已救出15名被困群众</h2></a>
+                            <div class="news-footer">
+                                搜狐新闻 07-01 16:09
+                            </div>
+                        </div>
+                        <div class="news-pic">
+                            <img src="./imgs/news/2.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="rt-hotnews">
+                    <div class="rt-header">
+                        <span><b>实时热点</b></span>
+                        <span style="float:right"><i class="site-icon icon-change"></i>换一换</span>
+                    </div>
+                    <div class="left-col">
+                        <ul>
+                            <li>
+                                中国第一整容狂
+                                <i class="site-icon icon-new"></i>
+                            </li>
+                            <li>
+                                nba史上最大合同
+                                <i class="site-icon icon-new"></i>
+                            </li>
+                            <li>
+                                成都聚众打砸
+                                <i class="site-icon icon-new"></i>
+                            </li>
+                            <li>
+                                韩雪称愿意做网红
+                            </li>
+                            <li>
+                                合租屋偷窥女同事
+                            </li>
+                            <li>
+                                赵本山身形消瘦
+                            </li>
+                            <li>
+                                少女丽江旅游遭打
+                            </li>
+                            <li>
+                                宁泽涛失奥运资格
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="right-col">
+                        <ul>
+                            <li>
+                                baby嗨跳民族舞
+                                <i class="site-icon icon-new"></i>
+                            </li>
+                            <li>
+                                陆航高颜值女飞
+                                <i class="site-icon icon-new"></i>
+                            </li>
+                            <li>
+                                暴雨橙色预警
+                                <i class="site-icon icon-new"></i>
+                            </li>
+                            <li>
+                                南极臭氧空洞减小
+                            </li>
+                            <li>
+                                网曝宜家不雅照
+                            </li>
+                            <li>
+                                假乞丐遭路人揭穿
+                            </li>
+                            <li>
+                                广州交警隐形战车
+                            </li>
+                            <li>
+                                垃圾桶给孩子擦嘴
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="sorted-content">
+                <div class="video-bg" style="margin-left:25px">
+                    <img src="imgs/news/v1.jpg" alt="">
+                    <span>欢乐颂</span>
+                </div>
+                <div class="video-bg">
+                    <img src="imgs/news/v2.jpg" alt="">
+                    <span>宇宙英雄之超银河传说</span>
+                </div>
+                <div class="video-sm">
+                    <img src="imgs/news/v3.jpg" alt="">
+                    <span>《老九门》陈伟霆张艺兴兄弟情义两难全</span>
+                </div>
+                <div class="video-sm">
+                    <img src="imgs/news/v4.jpg" alt="">
+                    <span>欧洲杯-葡萄牙点球6-4波兰挺入半决赛</span>
+                </div>
+                <div class="video-sm">
+                    <img src="imgs/news/v5.jpg" alt="">
+                    <span>欧洲杯-拉姆塞2助攻 威尔士3-1逆转比利时进4强</span>
+                </div>
+                <div class="video-sm">
+                    <img src="imgs/news/v6.jpg" alt="">
+                    <span>疯狂球迷冲进场内直奔C罗而去 保安在后狂追</span>
+                </div>
+            </div>
+            <div class="sorted-content">
+                <div class="sale-box sb1" style="margin-left:30px">    
+                    <div class="sale-slogan">
+                        <span>Comet男士户外登山包</span>
+                        <span>近期最低 <font color="#FE673D">直降200元</font></span>
+                    </div>
+                </div>
+                <div class="sale-box sb2">
+                    <div class="sale-slogan">
+                        <span>百度甄选</span>
+                        <span>不说话就送钱 <font color="#FE673D">高返59</font></span>
+                    </div>
+                </div>
+                <div class="sale-box sb3">
+                    <div class="sale-slogan">
+                        <span>资生堂天然土蜂蜜</span>
+                        <span>百度返现 <font color="#FE673D">60%</font></span>
+                    </div>
+                </div>
+                <div class="sale-box">
+                	<div class="sb-up">
+	                	<span><b>1元得iPhone SE</b></span><br>
+	                	<span>其他超值商品 1元可得</span><br>
+	                	<span><a href="#">去看看</a></span>	
+                	</div>
+                	<div class="sb-down">
+                		<span><b>返利商城</b></span>
+                		<div class="mall-box">
+                			<ul>
+                				<li>京东商城</li>
+                				<li>1号店</li>
+                				<li>蘑菇街</li>
+                				<li>聚美优品</li>
+                				<li>国美在线</li>
+                			</ul>
+                		</div>
+                		<div class="mall-box"> 
+                			<ul>
+                				<li>百度糯米</li>
+                				<li>当当网</li>
+                				<li>唯品会</li>
+                				<li>苏宁易购</li>
+                				<li><a href="">更多</a></li>
+                			</ul>
+                		</div>
+                		
+                	</div>
+                </div>
+            </div>
+        </div>
+    </article>
+    <footer>
+    	<span>
+	    	<a href="#">设为首页</a>
+	    	©2016&nbsp;Baidu&nbsp;
+	    	<a href="#">使用百度前必读</a>
+	    	<a href="#">意见反馈</a>
+	    	京ICP证030173号&nbsp;
+	    	<i class="footer-icon icon-f1"></i>
+    	</span><br>
+    	<span style="margin-top:-10px">
+    		<i class="footer-icon icon-f2"></i>
+    		<a>京公网安备11000002000001号</a>
+    	</span>
+    </footer>
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+</body>
+
+</html>

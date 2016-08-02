@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>盒模型</title>
+    <link rel="stylesheet" type="text/css" href="./box.css">
+</head>
+
+<body>
+    <!-- 留白 -->
+    <header style="width:100%;height:30px;">
+    </header>
+    <!-- 正文 -->
+    <article>
+        <!-- 正常盒子与怪异盒子对比 -->
+        <div class="title">
+            <h1>正常盒子与怪异盒子对比</h1>
+        </div>
+        <div class="outer">
+            <div class="box box_for_text">
+                <span class="text">盒子初始状态</span>
+            </div>
+            <div id="normal_box" class="box box_for_text">
+                <span class="text">正常盒加边框</span>
+            </div>
+            <div id="weird_box" class="box box_for_text">
+                <span class="text2">怪异盒加边框</span>
+            </div>
+        </div>
+        <!-- 弹性盒子水平分栏，垂直分栏，排序(flex)，cloumn分栏 -->
+        <div>
+            <div class="title">
+                <h1>弹性盒子水平分栏</h1>
+            </div>
+            <div class="box_flex" style="flex-direction:row">
+                <div class="box" style="background-color:orange; flex:1">
+                </div>
+                <div class="box" style="background-color:#129012; flex:2">
+                </div>
+                <div class="box" style="background-color:#bd0e0e;flex:3">
+                </div>
+            </div>
+            <div class="title">
+                <h1>弹性盒子垂直分栏</h1>
+            </div>
+            <div class="box_flex" style="flex-direction:column">
+                <div class="box2" style="background-color:orange; flex:1">
+                </div>
+                <div class="box2" style="background-color:#129012; flex:2">
+                </div>
+                <div class="box2" style="background-color:#bd0e0e;flex:3">
+                </div>
+            </div>
+            <div class="title">
+                <h1>弹性盒子排序</h1>
+            </div>
+            <div class="box_flex">
+                <div class="box" style="background-color:orange; flex:1;order:3">
+                </div>
+                <div class="box" style="background-color:#129012; flex:1;order:1">
+                </div>
+                <div class="box" style="background-color:#bd0e0e;flex:1;order:2">
+                </div>
+            </div>
+            <div class="title">
+                <h1>分栏</h1>
+            </div>
+            <div id="column_divide">
+                6月17日至24日，国家主席习近平将对塞尔维亚、波兰和乌兹别克斯坦进行国事访问，并出席在乌兹别克斯坦首都塔什干举行的上海合作组织成员国元首理事会第十六次会议。 　　这将是一趟务实合作之旅。塞尔维亚是中国的真诚朋友和在中东欧地区的首个战略伙伴。波兰是最早与新中国建交的国家之一，2011年中波建立战略伙伴关系。“丝路”古国乌兹别克斯坦是习主席欧亚之行第三站，中乌是真诚互信的好伙伴。“习主席此行是对传统友好国家的一次‘走亲戚式’的访问，将进一步增强中国与往访国的战略合作水平。”中国国际问题研究院欧亚所所长陈玉荣说。 　　这将是一趟推动“一带一路”建设之旅。中东欧，连接欧亚的重要枢纽和通道；中亚，丝绸之路经济带的重要组成部分；上合组织，丝绸之路经济带与欧亚经济联盟建设对接的独特纽带。推动“一带一路”建设，将贯穿习主席此次欧亚之行。
+            </div>
+        </div>
+        <!-- 旧版弹性盒子居中布局 -->
+        <div class="title">
+            <h1>旧版弹性盒子居中布局</h1>
+        </div>
+        <div id="old_box">
+            <div class="box3">
+            </div>
+        </div>
+    </article>
+    <!-- 页尾留白 -->
+    <footer style="width:100%;height:80px;">
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,108 @@
+@import "compass/css3";
+
+a,
+dd,
+div,
+dl,
+i,
+img,
+input,
+li,
+p,
+span,
+ul {
+    @include box-sizing(border-box);
+}
+
+blockquote,
+body,
+button,
+dd,
+dl,
+dt,
+fieldset,
+figure,
+form,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+input,
+legend,
+li,
+ol,
+p,
+pre,
+select,
+td,
+textarea,
+th,
+ul {
+    margin: 0;
+    padding: 0;
+    @include box-sizing(border-box);
+    font-family: Verdana, "Lantinghei SC", "Hiragino Sans GB", "Microsoft Yahei", Helvetica, arial, \5b8b\4f53, sans-serif;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+header {
+    min-height: 70px;
+    margin: 0 auto;
+    padding: 10px 0;
+    @include box-sizing(border-box);
+}
+
+footer {
+    min-width: 1000px;
+}
+
+.w-1000 {
+    width: 1000px;
+    margin: 0 auto;
+}
+
+.mar-t20 {
+    margin-top: 20px!important;
+}
+
+.mar-b8 {
+    margin-bottom: 8px;
+}
+
+.mar-t40 {
+    margin-top: 40px!important;
+}
+
+.mar-t50 {
+    margin-top: 50px!important;
+}
+
+.mar-t10 {
+    margin-top: 10px!important;
+}
+
+.cf {
+    zoom: 1;
+}
+
+.cf:after {
+    content: '';
+    display: block;
+    clear: both;
+    height: 0;
+    overflow: hidden;
+    visibility: hidden;
+}
+#container{
+    min-width: 1267px;
+}

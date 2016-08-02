@@ -1,0 +1,288 @@
+/*主css文件*/
+
+
+/*==============以下为引入css===================*/
+
+@import url('cube.min.css');
+@import url('bootstrap.min.css');
+
+/*=====================for login.html====================*/
+
+.login-body {
+    background: #65cea7 url("/images/backend/login-bg.jpg") no-repeat fixed;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.container {
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    text-align: center;
+}
+
+.login-body .container h1 {
+    font-family: "微软雅黑";
+    text-align: center;
+    font-size: 36px;
+    padding-top: 80px;
+    letter-spacing: 5px;
+    color: white;
+    margin-bottom: 15px;
+}
+
+#login_box {
+    width: 330px;
+    background-color: white;
+    border: 1px solid transparent;
+    border-radius: 5px;
+    margin: 0 auto;
+    text-align: center;
+    position: relative;
+}
+#login_box img{
+    margin-top:15px;
+}
+#login_box input {
+    display: block;
+    width: 290px;
+    height: 39px;
+    margin: 0 auto;
+    margin-top: 15px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border: 1px solid #eaeaec;
+    background: #eaeaec;
+    box-shadow: none;
+    font-size: 13px;
+    text-indent: 7px;
+}
+
+#login_box .btn-login {
+    width: 290px;
+    height: 50px;
+    margin-top: -10px;
+    background: #6bc5a4;
+    color: #fff;
+    font-weight: normal;
+    font-family: '微软雅黑', sans-serif;
+    margin: 20px 0 5px;
+    padding: 5px;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;
+    font-size: 25px;
+    border-radius: 6px;
+}
+
+#registration {
+    margin: 10px 0px;
+    color: #c7c7c7;
+}
+
+#registration a {
+    text-decoration: none;
+    color: #6bc5a4;
+    cursor: pointer;
+}
+
+#registration a:hover {
+    color: #3CC252;
+}
+
+
+/*==================end of for login.html=============================*/
+
+
+/*================== for index.html=============================*/
+html {
+    height:100%;   
+}
+
+body{
+    height:100%;
+}
+.container2 {
+    height: 100%;
+    width: 100%;
+    margin: 0 auto;
+}
+
+
+/*左右两烂样式，并保持等高*/
+
+.left-nav {
+    background-color: #424f63;
+    height: 100%;
+}
+
+.right-content {
+    padding: 0;
+    height: 100%;
+    background-color: #EFF0F4;
+}
+
+#nav-logo {
+    margin-top: 30px;
+}
+
+#panel-box {
+    margin-top: 20px;
+    text-align: center;
+    color: white;
+}
+
+#panel-box a {
+    text-decoration: none;
+    color: white;
+}
+
+#panel-box a:hover {
+    color: #6DC5A3;
+}
+#panel-box .tab-chosen{
+    color: #6DC5A3;
+}
+
+.left-nav ul li {
+    width: 100%;
+    height: 50px;
+    text-align: center;
+    color: white;
+    font-family: '微软雅黑', sans-serif;
+    font-size: 18px;
+    line-height: 50px;
+    border: 1px solid #353f4f;
+    border-left: transparent;
+    border-right: transparent;
+    cursor: pointer;
+}
+
+.left-nav ul {
+    margin-top: 10px;
+}
+
+.left-nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.left-nav ul li a:hover {
+    color: #428bca;
+}
+
+#title {
+    padding: 0;
+    width: 100%;
+    height: 50px;
+    background-color: #fff;
+    border: 1px solid #888;
+    border-left: none;
+    border-right: none;
+    border-top: none;
+    box-shadow: 0 0px 1px 0px;
+}
+
+#search-frame {
+    height: 30px;
+    margin-top: 10px;
+    margin-left: 10px;
+    text-align: left;
+    text-indent: 5px;
+    outline: none;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+.user-name {
+    width: 80px;
+    height: 30px;
+    margin: 10px 40px 10px 0;
+    color: #606060;
+    font-size: 22px;
+    line-height: 30px;
+    float: right;
+}
+.user-name a{
+    text-decoration:none;  
+}
+
+#user_menu {
+    min-width: 50px;
+    text-align: center;
+}
+
+content {
+    height: 100%;
+}
+
+content article {
+    height: 600px;
+    background-color: #EFF0F4;
+    font-size: 14px;
+    text-align: center;
+    overflow: scroll;
+}
+article table{
+    margin:10px auto;
+}
+article .table{
+    display: none;
+}
+article .tab-active{
+    display: block;
+}
+table th{
+    font-weight: bold;
+    text-align: center;
+}
+.id_input,.type_input,.title_input,.time_input,.img_input{
+    
+    height: 26px;
+}
+.id_input{
+    width: 30px;   
+}
+.type_input{
+    width: 80px;
+
+}
+.title_input{
+    width: 350px;
+}
+.time_input{
+    width: 100px;
+}
+.img_input{
+    width: 180px;
+}
+.add_news,.modify_news{
+    margin-top: 20px;
+}
+.modify_news{
+    display: none;
+}
+/*.modify_news{
+    width: 800px;
+    height: 100px;
+    background-color: #ccc;
+    opacity: 1;
+    position: absolute;
+    top:2%;
+    left: 2%;
+    border: 1px solid #666;
+}*/
+
+
+/*使小屏幕下搜索栏不再显示*/
+
+@media screen and (max-width:700px) {
+    .hidden-u700 {
+        display: none;
+    }
+}
+
+
+/*==================end of for index.html=============================

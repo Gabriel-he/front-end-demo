@@ -1,0 +1,178 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+
+@import "compass/reset";
+@import "compass/css3";
+
+$color_font_light:#D0CBD2;
+$color_bus_num:#C44F4A;
+$color_main_red:#B4424C;
+$color_main_green:#386153;
+
+@mixin wholesize {
+	width:100%;
+	height:100%;
+}
+@mixin busNumFrame{
+	width:60px;
+	height:40px;
+}
+@mixin board_border($size:10px,$type:solid,$color:#CBCAC6){
+	border:$size $type $color;
+}
+
+
+html{
+	width:100%;
+	height:100%;
+}
+body,.container{
+	@include wholesize;
+}
+.container{
+	background:#eee;
+	position: relative;
+	font-family:"微软雅黑";
+}
+
+.board-container{
+	position:absolute;
+	width:420px;
+	height:640px;
+	top: 50%;
+	margin-top: -320px;
+	left:50%;
+	margin-left:-240px;
+
+	@include background(linear-gradient(top,#3D5071,#C3C3C3));
+}
+// .board-container__head,
+// .board-container__content,
+// .board-container__foot{
+// 	@include box-sizing(border-box);
+// }
+
+
+.board-container__head,
+.board-container__content{
+	width:360px;
+	margin:0 auto;
+}
+.board-container__head {	
+	height:180px;
+	margin-top:30px;
+	@include board_border();
+	@include border-top-radius(180px);
+	@include box-sizing(border-box);
+	background:$color_main_red;
+}
+.board-container__content{
+	height:200px;
+	background-color:#e9e9e9;
+	@include board_border();
+	@include box-sizing(border-box);
+}
+.board-head{
+	@include wholesize;
+	h1{
+		font-size:36px;
+		color:$color_font_light;
+	}
+	h3{
+		color:$color_font_light;
+	}
+	.text-wrap{
+		margin-top:60px;
+		text-align:center;
+	}
+}
+.content__top{
+	margin-top:5px;
+	.bus--number{
+		@include busNumFrame;
+		float: left;
+		background:$color_bus_num;
+		text-align:center;
+		font-size:25px;
+		font-weight:bold;
+		line-height:40px;
+		color:$color_font_light;
+	}
+	.bus--info{
+		text-align:center;
+		color:$color_main_green;
+		h2{
+			font-size:26px;
+		}
+		h4{
+			font-size:10px;
+		}
+	}
+	.bus--time{
+		margin-top:4px;
+		h5{
+			font-size:10px;
+			text-align:left;
+			text-indent: 10px;
+		}
+	}
+}
+.content__mid{
+	height:85px;
+	margin:2px auto;
+	background:$color-main-green;
+	.bus--stop-name-warp{
+		width:95%;
+		height:100%;
+		margin:0 auto;
+		.bus--stop-name,.bus--stop-name2{
+			cursor:pointer;
+			width:12px;
+			float:left;
+			font-size:12px;
+			color:lighten($color-font-light,10%);
+			&:hover{
+				color:lighten($color-main-red,20%);
+			}
+		}
+		.bus--stop-name{
+			margin:5px 6px;
+		}
+		.bus--stop-name2{
+			margin:5px 10px;
+		}
+		.name--first{
+			margin-left:10px;
+		}
+		.name--last{
+			margin-right:10px;
+		}
+	}	
+}
+.content__bottom{
+	.bus--price{
+		margin-top:5px;
+		text-align:center;
+		h5{
+			font-size:10px;
+		}
+	}
+	.bar{
+		float:left;
+		width:80%;
+		height:0px;
+		margin:4px 0px 0px 27px;
+		@include board_border(2px, solid, $color-main-red);
+	}
+	.arrow{
+		float:left;
+		width:0px;
+		height:0px;
+		margin-top:-2px;
+		border-bottom: 10px solid $color-main-red;
+    	border-right: 20px solid transparent;
+
+	}
+}

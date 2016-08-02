@@ -1,0 +1,65 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+/* 各div公有样式 */
+
+.div_element {
+    height: 100px;
+    width: 100px;
+    box-shadow: 0px 2px 10px 3px #CEC7CF;
+    /* 浏览器兼容，下同 */
+    -moz-box-shadow: 0px 2px 10px 3px #CEC7CF;
+    -webkit-box-shadow: 0px 2px 10px 3px #CEC7CF;
+}
+/* 十字外部控制框样式 */
+
+.outer_box {
+    position: absolute;
+    height: 304px;
+    width: 304px;
+    top: 50%;
+    left: 50%;
+    margin-top: -152px;
+    margin-left: -152px;
+    text-align: center;
+    vertical-align: middle;
+    background-color: transparent;
+}
+/* 1-5个div各自样式 */
+
+#div1 {
+    margin-left: 102px;
+    background-color: #2B6799;
+}
+
+#div2 {
+    background-color: #572F74;
+    float: left;
+}
+
+#div3 {
+    background-color: #F2ECF3;
+    float: left;
+    margin-left: 2px;
+    display: -webkit-box;
+    -webkit-box-pack: center;
+    -webkit-box-align: center;
+}
+
+#div4 {
+    background-color: #2C8F35;
+    float: left;
+    margin-left: 2px;
+}
+
+#div5 {
+    margin-left: 102px;
+    background-color: #94272A;
+    float: left;
+}
+
+#icon {
+    width: 24px;
+    /*vertical-align: middle;*/
+}

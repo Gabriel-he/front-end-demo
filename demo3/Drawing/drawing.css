@@ -1,0 +1,352 @@
+#container {
+    width: 600px;
+    height: 600px;
+    margin: 0 auto;
+}
+
+#bunny_head {
+    width: 200px;
+    height: 200px;
+    border: 2px solid black;
+    background-color: white;
+    border-radius: 47%;
+    margin: 200px 0 0 200px;
+    position: absolute;
+}
+
+
+/*耳朵*/
+
+.ear {
+    width: 50px;
+    height: 150px;
+    border: 2px solid black;
+    background-color: white;
+    position: absolute;
+}
+
+
+/*耳朵动画分开控制*/
+
+#ear1 {
+    border-top-right-radius: 49px 150px;
+    border-top-left-radius: 55px 150px;
+    border-bottom-right-radius: 32px 150px;
+    border-bottom-left-radius: 40px 150px;
+    float: left;
+    transform: rotateZ(-19deg) translate(163px, 163px);
+    -webkit-transform: rotateZ(-19deg) translate(163px, 163px);
+    -ms-transform: rotateZ(-19deg) translate(163px, 163px);
+    -moz-transform: rotateZ(-19deg) translate(163px, 163px);
+    animation: ear_moving_1 1s ease-in-out infinite;
+    -webkit-animation: ear_moving_1 1s ease-in-out infinite;
+    -ms-animation: ear_moving_1 1s ease-in-out infinite;
+    -moz-animation: ear_moving_1 1s ease-in-out infinite;
+}
+
+@keyframes ear_moving_1 {
+    0% {}
+    100% {
+        transform: rotateZ(4deg) translate(242px, 71px);
+        -webkit-transform: rotateZ(4deg) translate(242px, 71px);
+        -ms-transform: rotateZ(4deg) translate(242px, 71px);
+        -moz-transform: rotateZ(4deg) translate(242px, 71px);
+    }
+}
+@-webkit-keyframes ear_moving_1 {
+    0% {}
+    100% {
+        transform: rotateZ(4deg) translate(242px, 71px);
+        -webkit-transform: rotateZ(4deg) translate(242px, 71px);
+        -ms-transform: rotateZ(4deg) translate(242px, 71px);
+        -moz-transform: rotateZ(4deg) translate(242px, 71px);
+    }
+}
+@-moz-keyframes ear_moving_1 {
+    0% {}
+    100% {
+        transform: rotateZ(4deg) translate(242px, 71px);
+        -webkit-transform: rotateZ(4deg) translate(242px, 71px);
+        -ms-transform: rotateZ(4deg) translate(242px, 71px);
+        -moz-transform: rotateZ(4deg) translate(242px, 71px);
+    }
+}
+
+#ear2 {
+    border-top-right-radius: 45px 150px;
+    border-top-left-radius: 61px 150px;
+    border-bottom-right-radius: 28px 150px;
+    border-bottom-left-radius: 51px 150px;
+    margin-left: 80px;
+    transform: rotateZ(9deg) translate(246px, 57px);
+    -webkit-transform: rotateZ(9deg) translate(246px, 57px);
+    -ms-transform: rotateZ(9deg) translate(246px, 57px);
+    -moz-transform: rotateZ(9deg) translate(246px, 57px);
+    animation: ear_moving_2 1s ease-in-out infinite;
+    -webkit-animation: ear_moving_2 1s ease-in-out infinite;
+    -moz-animation: ear_moving_2 1s ease-in-out infinite;
+    -ms-animation: ear_moving_2 1s ease-in-out infinite;
+}
+
+@keyframes ear_moving_2 {
+    0% {}
+    100% {
+        transform: rotateZ(20deg) translate(264px, 3px);
+        -ms-transform: rotateZ(20deg) translate(264px, 3px);
+        -moz-transform: rotateZ(20deg) translate(264px, 3px);
+        -webkit-transform: rotateZ(20deg) translate(264px, 3px);
+    }
+}
+@-webkit-keyframes ear_moving_2 {
+    0% {}
+    100% {
+        transform: rotateZ(20deg) translate(264px, 3px);
+        -ms-transform: rotateZ(20deg) translate(264px, 3px);
+        -moz-transform: rotateZ(20deg) translate(264px, 3px);
+        -webkit-transform: rotateZ(20deg) translate(264px, 3px);
+    }
+}
+@-moz-keyframes ear_moving_2 {
+    0% {}
+    100% {
+        transform: rotateZ(20deg) translate(264px, 3px);
+        -ms-transform: rotateZ(20deg) translate(264px, 3px);
+        -moz-transform: rotateZ(20deg) translate(264px, 3px);
+        -webkit-transform: rotateZ(20deg) translate(264px, 3px);
+    }
+}
+
+
+/*耳洞*/
+
+.ear_hole {
+    width: 20px;
+    height: 40px;
+    border: 1px solid transparent;
+    background-color: pink;
+    border-top-right-radius: 10px 20px;
+    border-top-left-radius: 10px 20px;
+    border-bottom-right-radius: 10px 20px;
+    border-bottom-left-radius: 10px 20px;
+}
+
+#eh1 {
+    transform: rotateZ(0deg) translate(14px, 65px);
+    -ms-transform: rotateZ(0deg) translate(14px, 65px);
+    -webkit-transform: rotateZ(0deg) translate(14px, 65px);
+    -moz-transform: rotateZ(0deg) translate(14px, 65px);
+}
+
+#eh2 {
+    transform: rotateZ(3deg) translate(16px, 58px);
+    -ms-transform: rotateZ(3deg) translate(16px, 58px);
+    -moz-transform: rotateZ(3deg) translate(16px, 58px);
+    -webkit-transform: rotateZ(3deg) translate(16px, 58px);
+}
+
+
+/*裙子*/
+
+#skirt {
+    width: 50px;
+    height: 0px;
+    border: 75px solid pink;
+    border-right-color: transparent;
+    border-top-color: transparent;
+    border-left-color: transparent;
+    border-radius: 20px;
+    transform: rotateZ(-4deg) translate(189px, 341px);
+    -webkit-transform: rotateZ(-4deg) translate(189px, 341px);
+    -moz-transform: rotateZ(-4deg) translate(189px, 341px);
+    -ms-transform: rotateZ(-4deg) translate(189px, 341px);
+}
+
+
+/*左右手*/
+
+#left_arm {
+    float: left;
+    width: 30px;
+    height: 60px;
+    border: 2px solid black;
+    background-color: white;
+    border-radius: 50% 50%;
+    transform: rotateZ(33deg) translate(425px, 197px);
+    -moz-transform: rotateZ(33deg) translate(425px, 197px);
+    -ms-transform: rotateZ(33deg) translate(425px, 197px);
+    -webkit-transform: rotateZ(33deg) translate(425px, 197px);
+}
+
+#right_arm {
+    /*float: left;*/
+    width: 50px;
+    height: 80px;
+    border: 2px solid black;
+    background-color: white;
+    border-radius: 50% 50%;
+    transform: skew(27deg, 8deg) translate(51px, -11px);
+    -webkit-transform: skew(27deg, 8deg) translate(51px, -11px);
+    -ms-transform: skew(27deg, 8deg) translate(51px, -11px);
+    -moz-transform: skew(27deg, 8deg) translate(51px, -11px);
+}
+
+
+/*左右腿*/
+
+#l_leg {
+    width: 60px;
+    height: 40px;
+    border: 2px solid black;
+    background-color: white;
+    border-top-left-radius: 26px 20px;
+    border-top-right-radius: 18px 27px;
+    border-bottom-right-radius: 32px 20px;
+    border-bottom-left-radius: 32px 20px;
+    border-top-color: transparent;
+    transform: rotateZ(-3deg) translate(238px, 342px);
+    -moz-transform: rotateZ(-3deg) translate(238px, 342px);
+    -webkit-transform: rotateZ(-3deg) translate(238px, 342px);
+    -ms-transform: rotateZ(-3deg) translate(238px, 342px);
+}
+
+#r_leg {
+    width: 60px;
+    height: 42px;
+    border: 2px solid black;
+    background-color: white;
+    border-top-left-radius: 39px 27px;
+    border-top-right-radius: 18px 27px;
+    border-bottom-right-radius: 30px 22px;
+    border-bottom-left-radius: 28px 30px;
+    border-top-color: transparent;
+    transform: rotateZ(-3deg) translate(289px, 297px);
+    -webkit-transform: rotateZ(-3deg) translate(289px, 297px);
+    -moz-transform: rotateZ(-3deg) translate(289px, 297px);
+    -ms-transform: rotateZ(-3deg) translate(289px, 297px);
+}
+
+
+/*眉毛*/
+
+.eyebrow {
+    width: 30px;
+    height: 30px;
+    border: 3px solid black;
+    border-radius: 50%;
+    border-bottom-color: transparent;
+    border-left-color: transparent;
+    border-right-color: transparent;
+}
+
+#eb_l {
+    transform: rotateZ(-12deg) translate(4px, 62px);
+    -webkit-transform: rotateZ(-12deg) translate(4px, 62px);
+    -moz-transform: rotateZ(-12deg) translate(4px, 62px);
+    -ms-transform: rotateZ(-12deg) translate(4px, 62px);
+}
+
+#eb_r {
+    transform: rotateZ(6deg) translate(130px, 1px);
+    -webkit-transform: rotateZ(6deg) translate(130px, 1px);
+    -moz-transform: rotateZ(6deg) translate(130px, 1px);
+    -ms-transform: rotateZ(6deg) translate(130px, 1px);
+}
+
+
+/*眼睛*/
+
+.eye {
+    width: 40px;
+    height: 40px;
+    border: 1px solid black;
+    background-color: black;
+    border-radius: 50%;
+}
+
+#e_l {
+    transform: rotateZ(-66deg) translate(-12px, 34px);
+    -webkit-transform: rotateZ(-66deg) translate(-12px, 34px);
+    -moz-transform: rotateZ(-66deg) translate(-12px, 34px);
+    -ms-transform: rotateZ(-66deg) translate(-12px, 34px);
+}
+
+#e_r {
+    transform: rotateZ(-82deg) translate(50px, 124px);
+    -webkit-transform: rotateZ(-82deg) translate(50px, 124px);
+    -moz-transform: rotateZ(-82deg) translate(50px, 124px);
+    -ms-transform: rotateZ(-82deg) translate(50px, 124px);
+}
+
+
+/*眼球*/
+
+.eyeball {
+    width: 20px;
+    height: 20px;
+    border: 1px solid transparent;
+    background-color: white;
+    border-radius: 50%;
+}
+
+#eball_l {
+    transform: translate(15px, 2px);
+    -webkit-transform: translate(15px, 2px);
+    -moz-transform: translate(15px, 2px);
+    -ms-transform: translate(15px, 2px);
+}
+
+#eball_r {
+    transform: translate(16px, 4px);
+    -webkit-transform: translate(16px, 4px);
+    -moz-transform: translate(16px, 4px);
+    -ms-transform: translate(16px, 4px);
+}
+
+
+/*嘴巴,分两片*/
+
+.mouth {
+    width: 30px;
+    height: 30px;
+    border: 3px solid black;
+    border-radius: 50%;
+    border-top-color: transparent;
+    border-left-color: transparent;
+    border-right-color: transparent;
+}
+
+#m_l {
+    transform: rotateZ(-8deg) translate(80px, -26px);
+    -webkit-transform: rotateZ(-8deg) translate(80px, -26px);
+    -moz-transform: rotateZ(-8deg) translate(80px, -26px);
+    -ms-transform: rotateZ(-8deg) translate(80px, -26px);
+}
+
+#m_r {
+    transform: rotateZ(-14deg) translate(112px, -51px);
+    -webkit-transform: rotateZ(-14deg) translate(112px, -51px);
+    -moz-transform: rotateZ(-14deg) translate(112px, -51px);
+    -ms-transform: rotateZ(-14deg) translate(112px, -51px);
+}
+
+.face_dot {
+    width: 25px;
+    height: 25px;
+    border: 1px solid transparent;
+    border-radius: 50%;
+    background-color: pink;
+}
+
+#dot_l {
+    transform: translate(38px, -89px);
+    -webkit-transform: translate(38px, -89px);
+    -moz-transform: translate(38px, -89px);
+    -ms-transform: translate(38px, -89px);
+}
+
+#dot_r {
+    transform: translate(145px, -132px);
+    -webkit-transform: translate(145px, -132px);
+    -moz-transform: translate(145px, -132px);
+    -ms-transform: translate(145px, -132px);
+}

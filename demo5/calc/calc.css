@@ -1,0 +1,32 @@
+#container1 {
+    width: 410px;
+    height: 50px;
+    margin: 200px auto 10px auto;
+}
+select{
+    float:left;
+    width: 35px;
+    height: 30px;
+}
+.score {
+    width: 150px;
+    height: 30px;
+    box-sizing: border-box;
+    float: left;
+}
+
+#_button {
+    display: inline-block;
+    width: 60px;
+    height: 30px;
+    font-size: 15px;
+    background-color: silver;
+    cursor: pointer;
+    border: none;
+    float: left;
+}
+
+#outcome {
+    display: block;
+    text-align: center;
+}

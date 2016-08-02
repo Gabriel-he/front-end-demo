@@ -1,0 +1,28 @@
+#container1 {
+    width: 510px;
+    height: 50px;
+    margin: 200px auto 10px auto;
+}
+
+#score1 {
+    width: 450px;
+    height: 30px;
+    box-sizing: border-box;
+    float: left;
+}
+
+#_button {
+    display: inline-block;
+    width: 60px;
+    height: 30px;
+    font-size: 15px;
+    background-color: silver;
+    cursor: pointer;
+    border: none;
+    float: left;
+}
+
+.outcome {
+    display: block;
+    text-align: center;
+}
