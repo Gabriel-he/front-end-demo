@@ -1,2 +1,2 @@
-# demo12
-star-eater£ºcocos2dÁ·Ï°£¬Ê¹ÓÃCocosCreator(IDE)¿ª·¢µÄÍøÒ³Ğ¡ÓÎÏ·¡ª¡ª³ÔĞÇĞÇµÄĞ¡¹ÖÊŞ¡£
+# demo13
+star-eaterï¼šcocos2dç»ƒä¹ ï¼Œä½¿ç”¨CocosCreator(IDE)å¼€å‘çš„ç½‘é¡µå°æ¸¸æˆâ€”â€”åƒæ˜Ÿæ˜Ÿçš„å°æ€ªå…½ã€‚
